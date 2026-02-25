@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Consulting Inquiry | Handy Company</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100;300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+          rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a",
+                        accent: "#3b82f6",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                        "card-light": "#f8fafc",
+                        "card-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        display: ["Pretendard", "sans-serif"],
+                        sans: ["Pretendard", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .dark .glass-nav {
+            background-color: rgba(15, 23, 42, 0.8);
+        }
+
+        .faq-accordion[open] .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+                <span class="text-xl font-bold tracking-tight text-primary">Handy Company</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a class="hover:text-primary transition-colors" href="#">서비스 소개</a>
+                <a class="hover:text-primary transition-colors" href="#">포트폴리오</a>
+                <a class="hover:text-primary transition-colors" href="#">워크 프로세스</a>
+                <a class="text-primary font-bold" href="#">문의하기</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" id="theme-toggle">
+                    <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+                </button>
+                <a class="bg-primary text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-900 transition-all"
+                   href="#inquiry-form">상담 신청하기</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<header class="relative pt-32 pb-20 overflow-hidden bg-slate-50 dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <span class="inline-block px-4 py-1 rounded-full bg-blue-100 text-primary text-sm font-bold mb-4">Consulting Inquiry</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    전문적인 컨설팅으로<br/>
+                    <span class="text-primary">비즈니스의 해답</span>을 찾으세요.
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    단순한 대행을 넘어 브랜드의 가치를 발견하고<br/>
+                    지속 가능한 성장을 위한 최적의 전략을 제안합니다.
+                </p>
+                <div class="flex items-center gap-6">
+                    <div class="flex -space-x-2">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
+                    </div>
+                    <p class="text-sm text-slate-500 font-medium">1,367개 이상의 기업이<br/>선택한 마케팅 전문가 팀</p>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="relative">
+                    <img alt="Consultant professional looking at screen"
+                         class="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
+                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp9prqmVLK6kWOTbSjNriQjdcsp9acRidiDASXnYThlCKW0TeLPYSn7q-0SB_AH1t6mXFKtnMbOTH0J56-8MwX-2haOGunHYRZg6xXqOzlhfeKkVU-S7g8Y_X78m2IlEI-SaBBQKgLoYqRwJfSSiQ7N4r9dNseyeluhthuKX02BudztEQ1Ivp3ntt1EeLXPFtlR3D0EWNc3MO5iWvP5WscQHRoiMxcYVi5chEwhAqRBTYbEwdB05TvLD0ODeC8oXRBUdr4CXETsHSw"/>
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-card-dark p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                                <span class="material-symbols-outlined">trending_up</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">평균 매출 상승률</p>
+                                <p class="text-xl font-bold">335% UP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section
+                class="bg-white dark:bg-card-dark rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 p-8 md:p-12 mb-20"
+                id="inquiry-form">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">edit_note</span>
+                문의 및 상담 신청
+            </h2>
+            <form action="#" class="space-y-10">
+                <div>
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">01. 서비스 선택</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <label class="relative flex p-4 cursor-pointer border rounded-xl hover:border-primary transition-all has-[:checked]:border-primary has-[:checked]:bg-blue-50/50 dark:has-[:checked]:bg-blue-900/10">
+                            <input checked="" class="sr-only" name="service_type" type="radio"/>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">work</span>
+                                <div>
+                                    <p class="font-bold">전문직 마케팅</p>
+                                    <p class="text-xs text-slate-500">변호사, 회계사, 노무사 전용</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="relative flex p-4 cursor-pointer border rounded-xl hover:border-primary transition-all has-[:checked]:border-primary has-[:checked]:bg-blue-50/50 dark:has-[:checked]:bg-blue-900/10">
+                            <input class="sr-only" name="service_type" type="radio"/>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">store</span>
+                                <div>
+                                    <p class="font-bold">사업자 마케팅</p>
+                                    <p class="text-xs text-slate-500">소상공인 및 중소기업</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="relative flex p-4 cursor-pointer border rounded-xl hover:border-primary transition-all has-[:checked]:border-primary has-[:checked]:bg-blue-50/50 dark:has-[:checked]:bg-blue-900/10">
+                            <input class="sr-only" name="service_type" type="radio"/>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">palette</span>
+                                <div>
+                                    <p class="font-bold">브랜딩 &amp; 디자인</p>
+                                    <p class="text-xs text-slate-500">CI/BI, 홈페이지 제작</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="relative flex p-4 cursor-pointer border rounded-xl hover:border-primary transition-all has-[:checked]:border-primary has-[:checked]:bg-blue-50/50 dark:has-[:checked]:bg-blue-900/10">
+                            <input class="sr-only" name="service_type" type="radio"/>
+                            <div class="flex gap-4">
+                                <span class="material-symbols-outlined text-primary">campaign</span>
+                                <div>
+                                    <p class="font-bold">SNS &amp; 광고 대행</p>
+                                    <p class="text-xs text-slate-500">블로그, 인스타, 포털광고</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">02. 상세 정보 입력</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">이름/회사명 <span
+                                    class="text-red-500">*</span></label>
+                            <input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all"
+                                   placeholder="성함 또는 기업명을 입력해주세요" type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">연락처 <span
+                                    class="text-red-500">*</span></label>
+                            <input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all"
+                                   placeholder="'-' 제외하고 입력" type="tel"/>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold mb-2">업종 및 지역</label>
+                            <input class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all"
+                                   placeholder="예: 서울 강남구 / 법률 서비스" type="text"/>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-semibold mb-2">문의 내용 <span
+                                    class="text-red-500">*</span></label>
+                            <textarea
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none transition-all"
+                                    placeholder="현재 고민 중이신 부분이나 희망하시는 목표를 상세히 남겨주세요." rows="6"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 border-t border-slate-100 dark:border-slate-800">
+                    <div class="flex items-start gap-3 mb-6">
+                        <input class="mt-1 rounded border-slate-300 text-primary focus:ring-primary" id="privacy-agree"
+                               type="checkbox"/>
+                        <label class="text-sm text-slate-500" for="privacy-agree">
+                            <span class="font-bold text-slate-700 dark:text-slate-300">개인정보 수집 및 이용 동의 (필수)</span><br/>
+                            입력하신 정보는 상담 목적으로만 사용되며 외부에 제공되지 않습니다.
+                        </label>
+                    </div>
+                    <button class="w-full bg-primary text-white py-5 rounded-xl font-bold text-lg hover:shadow-xl hover:brightness-110 transition-all flex items-center justify-center gap-2"
+                            type="submit">
+                        <span class="material-symbols-outlined">send</span>
+                        무료 컨설팅 신청하기
+                    </button>
+                    <p class="text-center text-xs text-slate-400 mt-4">영업일 기준 24시간 이내에 담당자가 연락을 드립니다.</p>
+                </div>
+            </form>
+        </section>
+        <section class="mb-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">자주 묻는 질문</h2>
+                <p class="text-slate-500">궁금하신 사항이 있으신가요? 자주 문의하시는 내용을 정리했습니다.</p>
+            </div>
+            <div class="space-y-4">
+                <details
+                        class="faq-accordion group bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-2xl p-2 transition-all">
+                    <summary class="flex items-center justify-between cursor-pointer p-4 font-bold list-none">
+                        <span>블로그나 인스타그램이나, 어디에든 관리해 주시는 거예요?</span>
+                        <span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-4 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-50 dark:border-slate-800 mt-2 text-sm leading-relaxed">
+                        네, 핸디컴퍼니는 통합 마케팅 그룹으로 네이버 블로그, 인스타그램, 페이스북, 유튜브 등 브랜드의 성격과 타겟 고객이 가장 많이 분포한 채널을 전략적으로 선정하여 통합
+                        관리해 드립니다.
+                    </div>
+                </details>
+                <details
+                        class="faq-accordion group bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-2xl p-2 transition-all">
+                    <summary class="flex items-center justify-between cursor-pointer p-4 font-bold list-none">
+                        <span>대면 미팅도 가능한가요?</span>
+                        <span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-4 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-50 dark:border-slate-800 mt-2 text-sm leading-relaxed">
+                        네, 가능합니다. 초기 전략 수립 단계에서는 심도 깊은 논의를 위해 대면 미팅을 권장하고 있습니다. 서울 강남구에 위치한 저희 사무실 또는 대표님의 사업장으로 방문 미팅이
+                        가능합니다. (지역에 따라 유선/화상 미팅으로 대체될 수 있습니다.)
+                    </div>
+                </details>
+                <details
+                        class="faq-accordion group bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-2xl p-2 transition-all">
+                    <summary class="flex items-center justify-between cursor-pointer p-4 font-bold list-none">
+                        <span>우선 1개월만 진행해 보고 싶어요. 가능한가요?</span>
+                        <span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-4 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-50 dark:border-slate-800 mt-2 text-sm leading-relaxed">
+                        마케팅은 초기 빌드업 과정이 필요하기 때문에 최소 3개월 이상의 진행을 추천드리나, 서비스의 퀄리티를 확인하고 싶으신 경우 1개월 테스트 진행도 가능합니다. 상세한 내용은
+                        상담 시 안내 도와드리겠습니다.
+                    </div>
+                </details>
+                <details
+                        class="faq-accordion group bg-white dark:bg-card-dark border border-slate-200 dark:border-slate-800 rounded-2xl p-2 transition-all">
+                    <summary class="flex items-center justify-between cursor-pointer p-4 font-bold list-none">
+                        <span>구체적인 가격에 대해 알고 싶어요!</span>
+                        <span class="material-symbols-outlined faq-icon transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-4 pt-2 text-slate-600 dark:text-slate-400 border-t border-slate-50 dark:border-slate-800 mt-2 text-sm leading-relaxed">
+                        가격은 관리 범위와 채널 수, 콘텐츠의 발행 빈도에 따라 다양하게 구성되어 있습니다. 기본 패키지부터 맞춤형 올인원 솔루션까지 다양하니, 문의를 남겨주시면 대표님의 상황에
+                        맞는 최적의 견적을 제안해 드립니다.
+                    </div>
+                </details>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="bg-slate-900 text-slate-400 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between gap-12 mb-12 border-b border-slate-800 pb-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-white text-3xl">handshake</span>
+                    <span class="text-xl font-bold tracking-tight text-white">Handy Company</span>
+                </div>
+                <p class="max-w-xs text-sm leading-relaxed">
+                    비즈니스의 가능성을 현실로 만드는<br/>
+                    데이터 중심 퍼포먼스 마케팅 그룹입니다.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-sm">
+                <div>
+                    <h5 class="text-white font-bold mb-4">Service</h5>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white transition-colors" href="#">블로그 마케팅</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">인스타 마케팅</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">로고 제작</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">홈페이지 제작</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Company</h5>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white transition-colors" href="#">회사소개</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">포트폴리오</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">채용안내</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-4">Connect</h5>
+                    <div class="flex gap-4">
+                        <a class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                           href="#">
+                            <span class="material-symbols-outlined text-sm">chat_bubble</span>
+                        </a>
+                        <a class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+                           href="#">
+                            <span class="material-symbols-outlined text-sm">photo_camera</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+            <p>© 2024 Handy Company. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a class="hover:text-white" href="#">이용약관</a>
+                <a class="hover:text-white" href="#">개인정보처리방침</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<button class="fixed bottom-8 right-8 bg-primary text-white flex items-center gap-2 px-6 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform z-50">
+    <span class="material-symbols-outlined">forum</span>
+    <span class="font-bold">카카오톡 상담</span>
+</button>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    themeToggleBtn.addEventListener('click', () => {
+        if (html.classList.contains('dark')) {
+            html.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            html.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+</script>
+
+</body>
+</html>
