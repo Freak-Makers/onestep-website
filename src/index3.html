@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>비즈니스 스케일업 파트너 | OneStep Consulting</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&amp;display=swap"
+          rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a8a", // Deep Navy Blue
+                        accent: "#3b82f6",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                        "card-light": "#f8fafc",
+                        "card-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        display: ["Pretendard", "sans-serif"],
+                        body: ["Pretendard", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                        "xl": "1.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .dark .glass-nav {
+            background-color: rgba(15, 23, 42, 0.8);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .step-circle::after {
+            content: '';
+            position: absolute;
+            right: -50%;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background: #e2e8f0;
+            z-index: -1;
+        }
+
+        .step-circle:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <span class="text-2xl font-extrabold text-primary">OneStep Consulting</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 font-semibold text-sm">
+            <a class="hover:text-primary transition-colors" href="#">왜 원스텝인가?</a>
+            <a class="hover:text-primary transition-colors" href="#">서비스 소개</a>
+            <a class="hover:text-primary transition-colors" href="#">성공 사례</a>
+            <a class="hover:text-primary transition-colors" href="#">비즈니스 문의</a>
+        </div>
+    </div>
+</nav>
+<header class="py-20 text-center">
+    <p class="text-primary font-semibold mb-4">포트폴리오</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-6">원스텝의 진짜 후기를 확인해 보세요</h1>
+    <p class="text-slate-500 dark:text-slate-400">원스텝의 실제 클라이언트분들이 말하는 100% 진짜 후기를 보여드립니다.</p>
+</header>
+<section class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="grid md:grid-cols-2 gap-8">
+        <div class="group">
+            <div class="relative overflow-hidden rounded-2xl mb-6">
+                <img alt="Professional Consultant" class="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyOrP0BK9uWqX7WgPnrHFfGlR8GxC0uSebrrFqWu-l5cVOz40rLsUf6NHBNVUdMlhl0AfGLjn3yWkJfy2mZlMbxYv4v5t7zItqNtpjynZvnctmDH66y4nd_l6WXk7yEmifHkKgZOiUL2uIU9cMZznvfZPUwXwIJxapyk0fvrRnDOeMmnDMoPXI3OIIYoAiCfhrCA1lHH8jzGVyHpOmweeDLMDIdNhKip-4w7A0XMw15WwGQXH7Yw5xakV2CJMn5Xr4l5VBQK2jsYJf"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+                    <p class="text-white text-lg font-medium">1,110곳의 사업장이 선택한<br/>노동법률사무소</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="font-bold text-xl mb-1">신원철 노무사 <span class="text-slate-400 font-normal text-sm ml-2">| 신노무법인 노무사</span></h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">항상 친절하게 설명해주시고 잘 챙겨주셔서 감사드려요~ 매번 진정성 있는 글을 작성해주셔서 감사드립니다! 믿고 계속해서 부탁드리고 싶습니다.</p>
+                </div>
+                <span class="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+            </div>
+        </div>
+        <div class="group">
+            <div class="relative overflow-hidden rounded-2xl mb-6">
+                <img alt="Business Professional" class="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg1Gd7Rkr4X6p-A_osPhTpteihQU8y9WDggNGmDATbQh8n-7LDNT17k-e9BoyNWrDKi1ytm-hJbL9I1r7oN7UCdID89DUPtAOLcC_PZ8C25zvJi8Dw40y1mSZyJ5IVCSaespy-B_X4T4bK7ChgHIViVKvNbN5fIgso-iI2Lw6eXPnz8i0pvKvB1MhgWWkKxcmoQcxExvqewxvryLyF0iE-P3gurfFQbksWb2f0JXBToH43fH7vjd5jyhLPlxkK561aYOKm-2sY5MFM"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
+                    <p class="text-white text-lg font-medium">10년 간 2,200건 공간 컨설팅 진행한<br/>대한민국 1세대 공간 컨설턴트</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="font-bold text-xl mb-1">김은호 대표님 <span class="text-slate-400 font-normal text-sm ml-2">| 정리수납 나이스</span></h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">원래 저희 실장님 하고 자랑 다녔는데 원스텝이랑 한 뒤로 3월부터는 팀장님 한명 추가로 근무하게 되었어요. 블로그, 인스타, 지식인 전부 효과가 너무 좋은듯 해요 항상 감사합니다^^</p>
+                </div>
+                <span class="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-slate-50 dark:bg-slate-900/50 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-extrabold mb-8">재계약률 99% 고객 후기가<br class="md:hidden"/> 증명하는 1위 마케팅 회사</h2>
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl">
+                        <span class="material-icons text-primary">military_tech</span>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-2xl font-bold">5.0 <span class="text-slate-400 text-lg font-normal">/ 5.0</span></p>
+                        <p class="text-xs text-slate-500">크몽 후기</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl">
+                        <span class="material-icons text-primary">handshake</span>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-2xl font-bold">99%</p>
+                        <p class="text-xs text-slate-500">재계약률</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">법무법인(유한) 강남</p>
+                <img alt="Logo Placeholder" class="h-8 grayscale opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-pFjsLAkbEV3xbwFfJiTesoDs1FILAfB74sO3NA0-Jn12GgCOVbOsGX7WhWgLpvQeIQzo35FiTDEa_aGktCPfuc2KCjo4R6tRCYaK4ue2HkklYpnmvwtWcgK1ebOe_JbaFwNvt8JROoFElM-mBFWvW6eNOTNijI2KYWLm9aiwjzQlJnV1YEowrc1YvUBzOMsuBL0gUxaHmCteDzKXojQ7zenmhBCKxhipoutCVUfj0uxLZWwc6is4Fy5cbJ3AKmNf92ZzuHgCqXMi"/>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">세무법인 아성</p>
+                <img alt="Logo Placeholder" class="h-8 grayscale opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfgf01hzJWbnSGK9FpH-ObrDC8f-MJwXrcd3n8dTcV0RLILahxi5B1_gOGsAZleNG1qH0l9YU8mM0e5cJq9Mc7Ggofr3kGGl46WJMzTWX8CygaakDvkxuUM_SSACHTIlhWG2QK4aG-tIodAcXOrifLghhvzVYRA78HoKzNmqANxDk9t7SLy_4XeBw7wsnUM40eloDqVityS-5UTjCyCrjemqzhYw4NP2RKbYC_sSBLABhbeZG1jvAtH5_pcgBcFFvez-NbKO2Hq8Ii"/>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">세무법인 다승</p>
+                <img alt="Logo Placeholder" class="h-8 grayscale opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiN5bi-q6mIt2o8TeRJ7lc1ovQ2l1zYXFGzer4ygOX-wd1PaQJEw_FLunEgWfA8VNIf5sS0yRPIpz0dlU9T9PwihL9D1RnYSl41ASEmtiFlQwAxYN8sIkafQRjGi41U-MBFWL2yxUSyaJpzWOTdYBuiM7qJay-nIzegXNmRGF-fSsukjaHCvUEkwayDfTCCLwCe8VwKMkq12AYSFc8IZEX96M_ZI6G9ip53t8-k4TD-BW2aWBiuRmGf7sSOWIlMe7BzduJJMtFiZ7F"/>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">법무법인 새날</p>
+                <img alt="Logo Placeholder" class="h-8 grayscale opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcZKTLFnsg7wQ8Et3XjazWNr-0_HcjGSs0pcth12KbGh3_UKL_W1s50cIk65IY1yXkDz3sQvGX79I-J-p_gTLoZZlcqs_K_6PDtUJN683Jcmg9l0KB4Ps6GPuDm5GeWLoHm4tRPB1tqCSdenweJXINDEG7O4AeDJqG7fUDu6LMVHt2E-IFxqdHp6H5M0NImOurt1yGGQfdSEW52rmsTzFsId9MHUYB7bd5wB27g5wmI9T6kRCOrIq6pomAroYwjXgTtHFkmjsXCWRv"/>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">BF 노동법률사무소</p>
+                <p class="font-bold text-slate-300">한국비지행정사무소</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">노무법인 더함</p>
+                <p class="font-bold text-slate-300">노무법인 더함</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">나이스 정리 수납</p>
+                <p class="font-bold text-slate-300">NICE SPACE</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 logo-grid-item">
+                <p class="text-xs font-bold text-slate-400 mb-4">로움 디자인</p>
+                <p class="font-bold text-slate-300 uppercase">Loum Design</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 opacity-50">
+                <p class="text-xs font-bold text-slate-400 mb-4">소신의</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 opacity-50">
+                <p class="text-xs font-bold text-slate-400 mb-4">주선생과 요리</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 opacity-50">
+                <p class="text-xs font-bold text-slate-400 mb-4">MIKVE</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 opacity-50">
+                <p class="text-xs font-bold text-slate-400 mb-4">비빈 코리아</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-32 bg-white dark:bg-background-dark">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="mb-12">
+            <img alt="Client Avatar" class="w-20 h-20 rounded-full mx-auto border-4 border-slate-100 dark:border-slate-800 mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrX5hbfFsbNDsFv3UWn9DaRzXQHdNRKtqN3PDO-YgHrkx8wZa9fqVKbvQfgw_4vEYU1AVO2-u5_kV7O6ZyKtY71WTNKC_xcgeqdJlT3_VoHJFe5z580BflUZDnvcbrDmMwHJYduFA5EDBjSjGTY7b6LSKYbLQ6kHVMUgZXo6fVBuiOpNV7gCViZ54L7DkBFQfw2FwDnUNlxS5oG8Q7iLJJ8hCGdyorDQUEhOqAFi2M1OIviwqI4J2Gz77_5IAv0w-flksFQm7tAu7"/>
+            <h3 class="text-2xl md:text-3xl font-bold leading-tight mb-4">
+                "시간에 맞춰 작업해 주시는 것은 물론이고,<br class="hidden md:block"/>
+                틈틈이 진행 상황 공유해 주셔서 정말 좋았습니다."
+            </h3>
+            <p class="text-slate-500 font-medium">서래글로벌빌딩센터</p>
+        </div>
+        <div class="flex justify-center gap-2">
+            <div class="w-12 h-1 bg-primary rounded-full"></div>
+            <div class="w-3 h-1 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+            <div class="w-3 h-1 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+            <div class="w-3 h-1 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+        </div>
+    </div>
+</section>
+<section class="bg-slate-50 dark:bg-slate-900/50 py-24">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-primary text-sm font-bold mb-2">크몽 리뷰 100%</p>
+            <h2 class="text-3xl font-extrabold">결국 원스텝을 선택한<br/>고객분들의 솔직한 이야기</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white dark:bg-surface-dark p-8 rounded-2xl border border-slate-100 dark:border-slate-800 testimonial-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-primary font-bold">김</div>
+                    <div>
+                        <p class="font-bold text-sm">김진수 대표님 <span class="text-yellow-400">★★★★★</span></p>
+                    </div>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">안녕하세요 팀장님! 블로그 너무 잘 써주셔서 감사합니다 너무 잘해주신덕분에 벌써 문의전화가 몇 건 왔네요. 항상 신경써주심에 감사합니다~!!!</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-8 rounded-2xl border border-slate-100 dark:border-slate-800 testimonial-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-500 font-bold">ed</div>
+                    <div>
+                        <p class="font-bold text-sm">edm에듀케이션 <span class="text-yellow-400">★★★★★</span></p>
+                    </div>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">급하게 요청드렸는데, 빠른 시간 안에 높은 퀄리티로 만들어주셔서 정말 좋았습니다! 커뮤니케이션도 깔끔하게 잘해주셔서 다음에 또 작업할 일 있으면 다시 맡기고 싶습니다!</p>
+            </div>
+            <div class="bg-white dark:bg-surface-dark p-8 rounded-2xl border border-slate-100 dark:border-slate-800 testimonial-card">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-500 font-bold">온</div>
+                    <div>
+                        <p class="font-bold text-sm">온화에스테틱 <span class="text-yellow-400">★★★★★</span></p>
+                    </div>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">안녕하세요 담당자님! 인스타그램 보고 신규 고객분들이 많이 방문해주셨어요! ㅎㅎ 새로운 고객분들 유입될 수 있도록 잘 세팅해주셔서 감사드립니다!</p>
+            </div>
+            <div class="bg-white/50 dark:bg-surface-dark/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 opacity-60">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-full bg-slate-200"></div>
+                    <div><p class="font-bold text-sm">황문호 노무사님 <span class="text-yellow-400">★★★★★</span></p></div>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">포스팅 글들이 기본적으로 크게 손볼곳 없이 너무 좋고...</p>
+            </div>
+        <div class="bg-white/50 dark:bg-surface-dark/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 opacity-60">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full bg-slate-200"></div>
+                <div><p class="font-bold text-sm">이용기 세무사님 <span class="text-yellow-400">★★★★★</span></p></div>
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">전문적 마케팅을 고민하다가 진정성 있는 글이...</p>
+        </div>
+        <div class="bg-white/50 dark:bg-surface-dark/50 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 opacity-60">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-full bg-slate-200"></div>
+                <div><p class="font-bold text-sm">클로버랜턴 <span class="text-yellow-400">★★★★★</span></p></div>
+            </div>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">분량도 많고, 피드백도 많이 드렸는데 놓치지 않고...</p>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="py-24 bg-white dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-bold text-center mb-12">서비스별 포트폴리오 상세히 살펴보기</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <a class="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+                <p class="font-bold text-lg mb-6">전문직 마케팅</p>
+                <div class="flex items-end justify-between">
+                    <div class="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-600">
+                        <span class="material-icons">architecture</span>
+                    </div>
+                    <span class="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                </div>
+            </a>
+            <a class="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+                <p class="font-bold text-lg mb-6">사업자 마케팅</p>
+                <div class="flex items-end justify-between">
+                    <div class="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
+                        <span class="material-icons">storefront</span>
+                    </div>
+                    <span class="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                </div>
+            </a>
+            <a class="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all" href="#">
+                <p class="font-bold text-lg mb-6">홈페이지 디자인</p>
+                <div class="flex items-end justify-between">
+                    <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600">
+                        <span class="material-icons">web</span>
+                    </div>
+                    <span class="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="relative h-[400px] flex items-center overflow-hidden">
+    <img alt="CTA Background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu3jYVexZJM4SZ36AtgVawx78fvn9ckZtBEPq_S55DUpdJDBot01L0lhDJ_XdbhO_DzL3VFHc5L57p-bRf-QWvg2bQVYA9dpScHc1NXMpB1hQW3sBtJkWGDD3luREOVRuqVD3exbrlFeyYOMyvJ39ZKGDAYBwer6aB5HL9-xP82zS7mSwm5CBPM1fFKizJcc-fCrpnZb3TPwRKHjSQfQK-V1PFyMHfl4-Xvquxq3dWJngpZbCo0CM5ZsaqFbCFsIuwuO3PFFgpzbkV"/>
+    <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-[2px]"></div>
+    <div class="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row md:items-center justify-between gap-8">
+        <div class="text-white">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+                저희의 목표는 단 하나,<br/>
+                대표님의 사업을 성공시키는 것
+            </h2>
+            <p class="text-slate-300">원스텝 컨설팅은 오직 대표님만을 위해 밤낮없이 일합니다.</p>
+        </div>
+        <a class="inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors shadow-lg" href="#">
+            문의하기
+        </a>
+    </div>
+</section>
+<footer class="bg-slate-900 text-slate-400 py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12 border-b border-slate-800 pb-12">
+            <div>
+                <span class="text-2xl font-black text-white mb-6 block">OneStep Consulting</span>
+                <p class="text-sm leading-relaxed max-w-xs">
+                    우리는 기업의 성장을 가속화하는 비즈니스 컨설팅 그룹입니다. 명확한 인사이트와 실행력으로 성공의 지름길을 안내합니다.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-12 text-sm">
+                <div>
+                    <h6 class="text-white font-bold mb-4">서비스</h6>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white" href="#">경영 컨설팅</a></li>
+                        <li><a class="hover:text-white" href="#">마케팅 전략</a></li>
+                        <li><a class="hover:text-white" href="#">DT 솔루션</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-white font-bold mb-4">회사소개</h6>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white" href="#">회사 소개</a></li>
+                        <li><a class="hover:text-white" href="#">채용 공고</a></li>
+                        <li><a class="hover:text-white" href="#">문의하기</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-white font-bold mb-4">법적 고지</h6>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-white" href="#">이용약관</a></li>
+                        <li><a class="hover:text-white" href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs">
+            <p>© 2024 OneStep Consulting. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                   href="#">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+                    </svg>
+                </a>
+                <a class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+                   href="#">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="fixed bottom-8 right-8 z-[100] md:hidden">
+    <button class="bg-primary text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center">
+        <span class="material-icons">chat</span>
+    </button>
+</div>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    themeToggleBtn.addEventListener('click', () => {
+        if (html.classList.contains('dark')) {
+            html.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        } else {
+            html.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+    // System preference check
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+</script>
+
+</body>
+</html>
