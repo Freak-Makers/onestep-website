@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1e3a8a;
+  --color-accent: #3b82f6;
+  --color-background-light: #ffffff;
+  --color-background-dark: #0f172a;
+  --color-card-light: #f8fafc;
+  --color-card-dark: #1e293b;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300;
+    font-family: 'Pretendard', sans-serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .logo-grid-item {
+    @apply transition-all duration-300;
+  }
+
+  .testimonial-card {
+    @apply transition-all duration-300;
+  }
+
+  .step-circle {
+    @apply relative flex flex-col items-center;
+  }
+
+  .step-circle::after {
+    content: '';
+    @apply absolute hidden lg:block;
+    right: -50%;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #e2e8f0;
+    z-index: -1;
+  }
+
+  .step-circle:last-child::after {
+    @apply lg:hidden;
+  }
+}
