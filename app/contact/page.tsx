@@ -36,17 +36,6 @@ export default function ContactPage() {
                   className="w-full h-[400px] object-cover rounded-3xl shadow-2xl"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp9prqmVLK6kWOTbSjNriQjdcsp9acRidiDASXnYThlCKW0TeLPYSn7q-0SB_AH1t6mXFKtnMbOTH0J56-8MwX-2haOGunHYRZg6xXqOzlhfeKkVU-S7g8Y_X78m2IlEI-SaBBQKgLoYqRwJfSSiQ7N4r9dNseyeluhthuKX02BudztEQ1Ivp3ntt1EeLXPFtlR3D0EWNc3MO5iWvP5WscQHRoiMxcYVi5chEwhAqRBTYbEwdB05TvLD0ODeC8oXRBUdr4CXETsHSw"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-white dark:bg-card-dark p-6 rounded-2xl shadow-xl">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
-                      <span className="material-symbols-outlined">trending_up</span>
-                    </div>
-                    <div>
-                      <p className="text-xs text-slate-500">평균 매출 상승률</p>
-                      <p className="text-xl font-bold text-slate-900 dark:text-white">335% UP</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
