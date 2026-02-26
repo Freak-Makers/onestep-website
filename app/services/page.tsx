@@ -88,7 +88,7 @@ export default function ServicesPage() {
       <Navbar />
       <main>
         {/* Hero Section from index2.html */}
-        <section className="relative h-[600px] flex items-center justify-center overflow-hidden bg-white dark:bg-background-dark">
+        <section className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden bg-white dark:bg-background-dark">
           <div className="absolute inset-0 z-0">
             <img
               alt="Office meeting background"
@@ -98,26 +98,26 @@ export default function ServicesPage() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-90"></div>
           </div>
           <div className="relative z-10 text-center text-white px-6">
-            <p className="text-xl md:text-2xl font-semibold mb-4 opacity-90">비즈니스의 가치를 높이는 최고의 파트너</p>
-            <h1 className="text-4xl md:text-6xl font-black mb-8 leading-tight">
+            <p className="text-lg md:text-2xl font-semibold mb-4 opacity-90">비즈니스의 가치를 높이는 최고의 파트너</p>
+            <h1 className="text-3xl md:text-6xl font-black mb-8 leading-tight">
               지속 가능한 성장을 위한<br />핵심 전략을 설계합니다.
             </h1>
-            <Link href="/contact" className="bg-white text-primary font-bold px-10 py-4 rounded-full text-lg hover:scale-105 transition-transform">
+            <Link href="/contact" className="bg-white text-primary font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-base md:text-lg hover:scale-105 transition-transform inline-block">
               무료 컨설팅 신청하기
             </Link>
           </div>
         </section>
 
         {/* Quote Section */}
-        <section className="py-24 bg-white dark:bg-background-dark text-center px-6">
+        <section className="py-20 md:py-24 bg-white dark:bg-background-dark text-center px-6">
           <div className="max-w-4xl mx-auto">
-            <span className="material-icons text-primary text-5xl mb-6">format_quote</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-primary dark:text-blue-300 leading-snug">
+            <span className="material-icons text-primary text-4xl md:text-5xl mb-6">format_quote</span>
+            <h2 className="text-xl md:text-3xl font-bold text-primary dark:text-blue-300 leading-snug">
               단순한 아이디어가 아닌,<br />실현 가능한 비즈니스 모델을 만듭니다.
             </h2>
-            <p className="mt-8 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              많은 기업들이 성장의 문턱에서 방향을 잃고 고민합니다.<br />
-              전문 인력이 없어서, 혹은 시장 분석이 부족해서 주저하고 계시지는 않나요?<br />
+            <p className="mt-6 md:mt-8 text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed">
+              많은 기업들이 성장의 문턱에서 방향을 잃고 고민합니다.<br className="hidden md:block" />
+              전문 인력이 없어서, 혹은 시장 분석이 부족해서 주저하고 계시지는 않나요?<br className="hidden md:block" />
               여러분의 소중한 가치가 실질적인 시장 성과로 이어지도록 원스텝이 함께하겠습니다.
             </p>
           </div>
@@ -127,14 +127,14 @@ export default function ServicesPage() {
         <Experts />
 
         {/* Performance Stats */}
-        <section className="gradient-bg py-20 px-6">
+        <section className="gradient-bg py-16 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-white text-3xl font-extrabold text-center mb-12">OneStep 핵심 성과 지표</h2>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <h2 className="text-white text-2xl md:text-3xl font-extrabold text-center mb-10 md:mb-12">OneStep 핵심 성과 지표</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
               {performanceStats.map((stat, index) => (
-                <div key={index} className="glass-card p-8 rounded-2xl text-white text-center">
-                  <p className="text-sm opacity-80 mb-2 whitespace-pre-line">{stat.label}</p>
-                  <p className="text-3xl font-black">{stat.value}</p>
+                <div key={index} className="glass-card p-6 md:p-8 rounded-2xl text-white text-center">
+                  <p className="text-xs md:text-sm opacity-80 mb-2 whitespace-pre-line">{stat.label}</p>
+                  <p className="text-2xl md:text-3xl font-black">{stat.value}</p>
                 </div>
               ))}
             </div>
@@ -142,38 +142,38 @@ export default function ServicesPage() {
         </section>
 
         {/* Lifecycle Services */}
-        <section className="py-24 max-w-7xl mx-auto px-6 bg-white dark:bg-background-dark">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100">비즈니스 전 생애주기를 커버합니다.</h2>
-            <p className="text-slate-500 dark:text-slate-400">대표님은 핵심 가치에 집중하세요. 나머지는 저희가 설계합니다.</p>
+        <section className="py-20 md:py-24 max-w-7xl mx-auto px-6 bg-white dark:bg-background-dark">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100 leading-tight">비즈니스 전 생애주기를 커버합니다.</h2>
+            <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">대표님은 핵심 가치에 집중하세요. 나머지는 저희가 설계합니다.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {subServices.map((service, index) => (
-              <div key={index} className="bg-slate-50 dark:bg-slate-800 p-6 rounded-xl flex items-center gap-4 border border-slate-100 dark:border-slate-700">
+              <div key={index} className="bg-slate-50 dark:bg-slate-800 p-5 md:p-6 rounded-xl flex items-center gap-4 border border-slate-100 dark:border-slate-700">
                 <span className="material-icons text-primary">{service.icon}</span>
-                <span className="font-bold text-slate-900 dark:text-slate-100">{service.title}</span>
+                <span className="font-bold text-sm md:text-base text-slate-900 dark:text-slate-100">{service.title}</span>
               </div>
             ))}
           </div>
         </section>
 
         {/* 6 Step Process */}
-        <section className="py-24 bg-slate-50 dark:bg-background-dark/50">
+        <section className="py-20 md:py-24 bg-slate-50 dark:bg-background-dark/50">
           <div className="max-w-5xl mx-auto px-6">
-            <div className="text-center mb-20">
-              <h2 className="text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100">성공을 부르는 6단계 프로세스</h2>
-              <p className="text-slate-500 dark:text-slate-400">기획부터 결과 보고서까지 완벽하게 서포트합니다.</p>
+            <div className="text-center mb-16 md:mb-20">
+              <h2 className="text-2xl md:text-3xl font-extrabold mb-4 text-slate-900 dark:text-slate-100">성공을 부르는 6단계 프로세스</h2>
+              <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">기획부터 결과 보고서까지 완벽하게 서포트합니다.</p>
             </div>
-            <div className="space-y-24">
+            <div className="space-y-20 md:space-y-24">
               {processSteps.map((step, index) => (
-                <div key={index} className="flex flex-col md:flex-row items-center gap-12">
-                  <div className={`flex-1 ${index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}`}>
-                    <span className="text-primary font-bold">{step.step}</span>
-                    <h4 className="text-2xl font-extrabold mt-2 mb-4 text-slate-900 dark:text-slate-100">{step.title}</h4>
-                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{step.description}</p>
+                <div key={index} className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                  <div className={`flex-1 ${index % 2 !== 0 ? 'md:order-2' : 'md:order-1'} text-center md:text-left`}>
+                    <span className="text-primary font-bold text-sm md:text-base">{step.step}</span>
+                    <h4 className="text-xl md:text-2xl font-extrabold mt-2 mb-4 text-slate-900 dark:text-slate-100">{step.title}</h4>
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm md:text-base">{step.description}</p>
                   </div>
-                  <div className={`flex-1 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}>
-                    <img alt={step.alt} className="rounded-2xl shadow-xl w-full" src={step.image} />
+                  <div className={`flex-1 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'} w-full`}>
+                    <img alt={step.alt} className="rounded-2xl shadow-xl w-full aspect-[4/3] object-cover" src={step.image} />
                   </div>
                 </div>
               ))}
@@ -182,49 +182,49 @@ export default function ServicesPage() {
         </section>
 
         {/* Success Stories Cards */}
-        <section className="py-24 max-w-7xl mx-auto px-6 bg-white dark:bg-background-dark">
-          <h2 className="text-3xl font-extrabold text-center mb-16 text-slate-900 dark:text-slate-100">성공적인 비즈니스 트랜스포메이션,<br /><span className="text-primary">원스텝</span>이 함께한 결과입니다.</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all group">
-              <div className="flex justify-between items-start mb-6">
+        <section className="py-20 md:py-24 max-w-7xl mx-auto px-6 bg-white dark:bg-background-dark">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-12 md:mb-16 text-slate-900 dark:text-slate-100 leading-tight">성공적인 비즈니스 트랜스포메이션,<br /><span className="text-primary">원스텝</span>이 함께한 결과입니다.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="bg-white dark:bg-slate-800 p-6 md:p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all group">
+              <div className="flex justify-between items-start mb-6 gap-4">
                 <div>
-                  <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">스케일업 프로젝트</span>
-                  <h5 className="text-xl font-bold mt-3 text-slate-900 dark:text-slate-100">글로벌 핀테크 브랜드</h5>
-                  <p className="text-slate-500 text-sm mt-1">시장 확장 전략 컨설팅</p>
+                  <span className="bg-primary/10 text-primary text-[10px] md:text-xs font-bold px-3 py-1 rounded-full">스케일업 프로젝트</span>
+                  <h5 className="text-lg md:text-xl font-bold mt-3 text-slate-900 dark:text-slate-100">글로벌 핀테크 브랜드</h5>
+                  <p className="text-slate-500 text-xs md:text-sm mt-1">시장 확장 전략 컨설팅</p>
                 </div>
-                <img alt="Client 1" className="w-20 h-20 rounded-2xl object-cover"
+                <img alt="Client 1" className="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy5gRRAmNNJB_DR-8jTJmW41kJfHrCSP9pa7ap6eZjPlj73UCHm492Tvz9sq6sYqLYRL3LqdIXuguZgLyW0wAzOcuASY-25vAMDtrvoMKGiF8wRCzaDS7O7DcrQWEwUAZnaYb0cMDYbZrU2ZnB-zcDB0n9xaqocElpcijFkxKfvuN_W_d-MbyOe59gCc5wXW3ourT5n_E33vuCOLkpPydX5wujD2bWoD09eW5uu3Ap44n_GA4LKk3AG0_zb7bOUShjB7lKBdO4iguf" />
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl">
-                <p className="italic text-slate-600 dark:text-slate-400">"단순한 조언이 아닌 실행 가능한 액션 플랜이 인상적이었습니다. 덕분에 해외 시장 안착에 성공했습니다."</p>
+              <div className="bg-slate-50 dark:bg-slate-900 p-5 md:p-6 rounded-2xl">
+                <p className="italic text-slate-600 dark:text-slate-400 text-sm md:text-base">"단순한 조언이 아닌 실행 가능한 액션 플랜이 인상적이었습니다. 덕분에 해외 시장 안착에 성공했습니다."</p>
               </div>
             </div>
-            <div className="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all group">
-              <div className="flex justify-between items-start mb-6">
+            <div className="bg-white dark:bg-slate-800 p-6 md:p-8 rounded-3xl border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all group">
+              <div className="flex justify-between items-start mb-6 gap-4">
                 <div>
-                  <span className="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full">리브랜딩 프로젝트</span>
-                  <h5 className="text-xl font-bold mt-3 text-slate-900 dark:text-slate-100">프리미엄 라이프스타일 샵</h5>
-                  <p className="text-slate-500 text-sm mt-1">BX 디자인 및 마케팅 고도화</p>
+                  <span className="bg-primary/10 text-primary text-[10px] md:text-xs font-bold px-3 py-1 rounded-full">리브랜딩 프로젝트</span>
+                  <h5 className="text-lg md:text-xl font-bold mt-3 text-slate-900 dark:text-slate-100">프리미엄 라이프스타일 샵</h5>
+                  <p className="text-slate-500 text-xs md:text-sm mt-1">BX 디자인 및 마케팅 고도화</p>
                 </div>
-                <img alt="Client 2" className="w-20 h-20 rounded-2xl object-cover"
+                <img alt="Client 2" className="w-16 h-16 md:w-20 md:h-20 rounded-2xl object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzXHp2PpOVASKNsBoBp-7N5k1-LUKIrg4OQZ0OHQZldwNdml6RCFeWrrP7VG9m4Lml9j8wjwS6vC7UK8rjgMRUUTNsmDEQhg-X423oAGUnHq47QENEJW5HWhSQVXBpoWnlrkNwOPZdAzouIBJhnvHU-LTcfEZwTcpgj1nk_QNsZW5Cnw8-vnzhaipzCPPSQpPWeVh-jtuBSzE1gyU68RPRV201hvmyQkHYcdyxXt_r8bue0QCYFRXtvMdi5lv40jviyw1IGH7tLkM2" />
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl">
-                <p className="italic text-slate-600 dark:text-slate-400">"브랜드의 숨겨진 가치를 발견해주셨습니다. 고객들의 반응이 확연히 달라진 것을 체감하고 있습니다."</p>
+              <div className="bg-slate-50 dark:bg-slate-900 p-5 md:p-6 rounded-2xl">
+                <p className="italic text-slate-600 dark:text-slate-400 text-sm md:text-base">"브랜드의 숨겨진 가치를 발견해주셨습니다. 고객들의 반응이 확연히 달라진 것을 체감하고 있습니다."</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-slate-50 dark:bg-background-dark/50">
+        <section className="py-20 md:py-24 bg-slate-50 dark:bg-background-dark/50">
           <div className="max-w-3xl mx-auto px-6">
             <FAQ items={index2Faqs} />
           </div>
         </section>
 
         {/* Final CTA */}
-        <section className="relative py-32 overflow-hidden">
+        <section className="relative py-24 md:py-32 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
               alt="Office desk"
@@ -233,16 +233,16 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
           </div>
-          <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-            <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8">
+          <div className="relative z-10 max-w-4xl mx-auto text-center px-6 text-white">
+            <h2 className="text-2xl md:text-5xl font-extrabold mb-6 md:mb-8 leading-tight">
               성공적인 비즈니스의 도약,<br />지금 바로 시작하세요.
             </h2>
-            <p className="text-white/80 text-xl mb-12">현재 한정된 파트너십으로 1:1 맞춤형 진단을 진행하고 있습니다.</p>
+            <p className="text-white/80 text-lg md:text-xl mb-10 md:mb-12">현재 한정된 파트너십으로 1:1 맞춤형 진단을 진행하고 있습니다.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="bg-white text-primary font-bold px-10 py-4 rounded-full text-lg hover:shadow-2xl transition-all">
+              <Link href="/contact" className="bg-white text-primary font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-base md:text-lg hover:shadow-2xl transition-all">
                 무료 상담 신청하기
               </Link>
-              <Link href="/services" className="bg-transparent border-2 border-white text-white font-bold px-10 py-4 rounded-full text-lg hover:bg-white hover:text-primary transition-all">
+              <Link href="/services" className="bg-transparent border-2 border-white text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-full text-base md:text-lg hover:bg-white hover:text-primary transition-all">
                 솔루션 자세히 보기
               </Link>
             </div>

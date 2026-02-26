@@ -40,75 +40,75 @@ export default function PortfolioPage() {
   return (
     <>
       <Navbar />
-      <header className="py-20 text-center bg-white dark:bg-background-dark">
+      <header className="py-16 md:py-20 text-center bg-white dark:bg-background-dark px-6">
         <p className="text-primary font-semibold mb-4">포트폴리오</p>
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-slate-900 dark:text-white">원스텝의 진짜 후기를 확인해 보세요</h1>
-        <p className="text-slate-500 dark:text-slate-400">원스텝의 실제 클라이언트분들이 말하는 100% 진짜 후기를 보여드립니다.</p>
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-slate-900 dark:text-white leading-tight">원스텝의 진짜 후기를 확인해 보세요</h1>
+        <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">원스텝의 실제 클라이언트분들이 말하는 100% 진짜 후기를 보여드립니다.</p>
       </header>
       <main className="bg-white dark:bg-background-dark">
         <section className="max-w-7xl mx-auto px-6 pb-24">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {reviews.map((review, index) => (
               <div key={index} className="group">
-                <div className="relative overflow-hidden rounded-2xl mb-6">
-                  <img src={review.image} alt={review.name} className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
-                    <p className="text-white text-lg font-medium whitespace-pre-line">{review.highlight}</p>
+                <div className="relative overflow-hidden rounded-2xl mb-6 aspect-video">
+                  <img src={review.image} alt={review.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-8">
+                    <p className="text-white text-base md:text-lg font-medium whitespace-pre-line">{review.highlight}</p>
                   </div>
                 </div>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="font-bold text-xl mb-1">{review.name} <span className="text-slate-400 font-normal text-sm ml-2">| {review.role}</span></h3>
-                    <p className="text-slate-600 leading-relaxed">{review.text}</p>
+                <div className="flex justify-between items-start gap-4">
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg md:text-xl mb-2">{review.name} <span className="text-slate-400 font-normal text-xs md:text-sm ml-2">| {review.role}</span></h3>
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm md:text-base">{review.text}</p>
                   </div>
-                  <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                  <span className="material-icons text-slate-300 group-hover:text-primary transition-colors mt-1">trending_flat</span>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="bg-slate-50 dark:bg-background-dark/50 py-24">
+        <section className="bg-slate-50 dark:bg-background-dark/50 py-20 md:py-24">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-extrabold mb-8 text-slate-900 dark:text-white">재계약률 99% 고객 후기가<br className="md:hidden" /> 증명하는 1위 마케팅 회사</h2>
-            <div className="flex flex-wrap justify-center gap-12 mb-16">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl"><span className="material-icons text-primary">military_tech</span></div>
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-8 text-slate-900 dark:text-white leading-tight">재계약률 99% 고객 후기가<br className="md:hidden" /> 증명하는 1위 마케팅 회사</h2>
+            <div className="flex flex-row justify-center gap-8 md:gap-12 mb-16">
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="p-2 md:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl"><span className="material-icons text-primary text-xl md:text-2xl">military_tech</span></div>
                 <div className="text-left">
-                  <p className="text-2xl font-bold text-slate-900 dark:text-white">5.0 <span className="text-slate-400 text-lg font-normal">/ 5.0</span></p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">크몽 후기</p>
+                  <p className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">5.0 <span className="text-slate-400 text-sm md:text-lg font-normal">/ 5.0</span></p>
+                  <p className="text-[10px] md:text-xs text-slate-500 dark:text-slate-400">크몽 후기</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl"><span className="material-icons text-primary">handshake</span></div>
+              <div className="flex items-center gap-3 md:gap-4">
+                <div className="p-2 md:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl"><span className="material-icons text-primary text-xl md:text-2xl">handshake</span></div>
                 <div className="text-left">
-                  <p className="text-2xl font-bold text-slate-900 dark:text-white">99%</p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">재계약률</p>
+                  <p className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">99%</p>
+                  <p className="text-[10px] md:text-xs text-slate-500 dark:text-slate-400">재계약률</p>
                 </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20 md:mb-24">
               {clientLogos.map((logo, i) => (
-                <div key={i} className="bg-white dark:bg-card-dark p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800">
-                  <p className="text-xs font-bold text-slate-400 mb-4">{logo.name}</p>
+                <div key={i} className="bg-white dark:bg-card-dark p-4 md:p-6 rounded-2xl flex flex-col items-center justify-center border border-slate-100 dark:border-slate-800 h-32 md:h-40">
+                  <p className="text-[10px] md:text-xs font-bold text-slate-400 mb-3 md:mb-4">{logo.name}</p>
                   {logo.image ? (
-                    <img alt={logo.name} className="h-8 grayscale opacity-70" src={logo.image} />
+                    <img alt={logo.name} className="h-6 md:h-8 grayscale opacity-70" src={logo.image} />
                   ) : (
-                    <p className="font-bold text-slate-300 dark:text-slate-500">{logo.text}</p>
+                    <p className="font-bold text-sm md:text-base text-slate-300 dark:text-slate-500">{logo.text}</p>
                   )}
                 </div>
               ))}
             </div>
 
-            <div className="mb-24">
+            <div className="mb-20 md:mb-24">
               <div className="max-w-4xl mx-auto text-center">
-                <img alt="Client Avatar" className="w-20 h-20 rounded-full mx-auto border-4 border-slate-100 dark:border-slate-800 mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrX5hbfFsbNDsFv3UWn9DaRzXQHdNRKtqN3PDO-YgHrkx8wZa9fqVKbvQfgw_4vEYU1AVO2-u5_kV7O6ZyKtY71WTNKC_xcgeqdJlT3_VoHJFe5z580BflUZDnvcbrDmMwHJYduFA5EDBjSjGTY7b6LSKYbLQ6kHVMUgZXo6fVBuiOpNV7gCViZ54L7DkBFQfw2FwDnUNlxS5oG8Q7iLJJ8hCGdyorDQUEhOqAFi2M1OIviwqI4J2Gz77_5IAv0w-flksFQm7tAu7" />
-                <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-4 text-slate-900 dark:text-white">
+                <img alt="Client Avatar" className="w-16 h-16 md:w-20 md:h-20 rounded-full mx-auto border-4 border-slate-100 dark:border-slate-800 mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrX5hbfFsbNDsFv3UWn9DaRzXQHdNRKtqN3PDO-YgHrkx8wZa9fqVKbvQfgw_4vEYU1AVO2-u5_kV7O6ZyKtY71WTNKC_xcgeqdJlT3_VoHJFe5z580BflUZDnvcbrDmMwHJYduFA5EDBjSjGTY7b6LSKYbLQ6kHVMUgZXo6fVBuiOpNV7gCViZ54L7DkBFQfw2FwDnUNlxS5oG8Q7iLJJ8hCGdyorDQUEhOqAFi2M1OIviwqI4J2Gz77_5IAv0w-flksFQm7tAu7" />
+                <h3 className="text-xl md:text-3xl font-bold leading-tight mb-4 text-slate-900 dark:text-white px-4">
                   "시간에 맞춰 작업해 주시는 것은 물론이고,<br className="hidden md:block" />
                   틈틈이 진행 상황 공유해 주셔서 정말 좋았습니다."
                 </h3>
-                <p className="text-slate-500 dark:text-slate-400 font-medium">서래글로벌빌딩센터</p>
+                <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 font-medium">서래글로벌빌딩센터</p>
                 <div className="flex justify-center gap-2 mt-8">
                   <div className="w-12 h-1 bg-primary rounded-full"></div>
                   <div className="w-3 h-1 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
@@ -118,14 +118,14 @@ export default function PortfolioPage() {
               </div>
             </div>
 
-            <div className="text-center mb-16">
-              <p className="text-primary text-sm font-bold mb-2">크몽 리뷰 100%</p>
-              <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white">결국 원스텝을 선택한<br />고객분들의 솔직한 이야기</h2>
+            <div className="text-center mb-12 md:mb-16 px-4">
+              <p className="text-primary text-xs md:text-sm font-bold mb-2">크몽 리뷰 100%</p>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">결국 원스텝을 선택한<br />고객분들의 솔직한 이야기</h2>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {testimonials.map((t, i) => (
-                <div key={i} className="bg-white dark:bg-card-dark p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-left">
+                <div key={i} className="bg-white dark:bg-card-dark p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 text-left">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-primary font-bold">{t.initial}</div>
                     <div><p className="font-bold text-sm text-slate-900 dark:text-white">{t.name} <span className="text-yellow-400">{t.rating}</span></p></div>
@@ -135,32 +135,32 @@ export default function PortfolioPage() {
               ))}
             </div>
 
-            <div className="mt-24">
-              <h2 className="text-2xl font-bold text-center mb-12 text-slate-900 dark:text-white">서비스별 포트폴리오 상세히 살펴보기</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/services" className="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-lg mb-6 text-left text-slate-900 dark:text-white">전문직 마케팅</p>
+            <div className="mt-20 md:mt-24">
+              <h2 className="text-xl md:text-2xl font-bold text-center mb-10 md:mb-12 text-slate-900 dark:text-white">서비스별 포트폴리오 상세히 살펴보기</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">전문직 마케팅</p>
                   <div className="flex items-end justify-between">
-                    <div className="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-600">
-                      <span className="material-icons">architecture</span>
+                    <div className="p-2 md:p-3 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-600">
+                      <span className="material-icons text-xl md:text-2xl">architecture</span>
                     </div>
                     <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
                   </div>
                 </Link>
-                <Link href="/services" className="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-lg mb-6 text-left text-slate-900 dark:text-white">사업자 마케팅</p>
+                <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">사업자 마케팅</p>
                   <div className="flex items-end justify-between">
-                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
-                      <span className="material-icons">storefront</span>
+                    <div className="p-2 md:p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
+                      <span className="material-icons text-xl md:text-2xl">storefront</span>
                     </div>
                     <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
                   </div>
                 </Link>
-                <Link href="/services" className="group block p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-lg mb-6 text-left text-slate-900 dark:text-white">홈페이지 디자인</p>
+                <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">홈페이지 디자인</p>
                   <div className="flex items-end justify-between">
-                    <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600">
-                      <span className="material-icons">web</span>
+                    <div className="p-2 md:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600">
+                      <span className="material-icons text-xl md:text-2xl">web</span>
                     </div>
                     <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
                   </div>
@@ -170,15 +170,15 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <section className="relative h-[400px] flex items-center overflow-hidden">
+        <section className="relative h-[350px] md:h-[400px] flex items-center overflow-hidden">
           <img alt="CTA Background" className="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu3jYVexZJM4SZ36AtgVawx78fvn9ckZtBEPq_S55DUpdJDBot01L0lhDJ_XdbhO_DzL3VFHc5L57p-bRf-QWvg2bQVYA9dpScHc1NXMpB1hQW3sBtJkWGDD3luREOVRuqVD3exbrlFeyYOMyvJ39ZKGDAYBwer6aB5HL9-xP82zS7mSwm5CBPM1fFKizJcc-fCrpnZb3TPwRKHjSQfQK-V1PFyMHfl4-Xvquxq3dWJngpZbCo0CM5ZsaqFbCFsIuwuO3PFFgpzbkV" />
           <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-[2px]"></div>
           <div className="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="text-white">
-              <h2 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">저희의 목표는 단 하나,<br />대표님의 사업을 성공시키는 것</h2>
-              <p className="text-slate-300">원스텝 컨설팅은 오직 대표님만을 위해 밤낮없이 일합니다.</p>
+              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">저희의 목표는 단 하나,<br />대표님의 사업을 성공시키는 것</h2>
+              <p className="text-sm md:text-base text-slate-300">원스텝 컨설팅은 오직 대표님만을 위해 밤낮없이 일합니다.</p>
             </div>
-            <Link href="/contact" className="inline-flex items-center justify-center px-10 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors shadow-lg">문의하기</Link>
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 md:px-10 py-3 md:py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors shadow-lg">문의하기</Link>
           </div>
         </section>
       </main>

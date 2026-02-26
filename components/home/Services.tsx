@@ -27,15 +27,15 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-background-dark" id="services">
+    <section className="py-20 md:py-24 bg-white dark:bg-background-dark" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
-          <div className="md:w-1/3 sticky top-24">
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="lg:w-1/3 lg:sticky lg:top-24">
             <span className="text-primary font-bold tracking-widest uppercase text-sm">Services</span>
-            <h2 className="text-4xl font-bold mt-4 mb-6 leading-tight text-slate-900 dark:text-slate-100">성장을 가속화하는 핵심 솔루션</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 leading-tight text-slate-900 dark:text-slate-100">성장을 가속화하는 핵심 솔루션</h2>
             <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-8">복잡한 비즈니스 환경에서도 흔들리지 않는 명확한 성공 방정식을 제시합니다.</p>
           </div>
-          <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {services.map((service, index) => (
               <div key={index} className="group p-6 bg-card-light dark:bg-card-dark rounded-2xl border border-transparent hover:border-primary transition-all">
                 <img

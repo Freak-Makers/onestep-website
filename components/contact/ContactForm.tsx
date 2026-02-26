@@ -1,30 +1,30 @@
 export default function ContactForm() {
   return (
-    <section className="py-24" id="contact">
+    <section className="py-20 md:py-24" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-card-light dark:bg-card-dark rounded-3xl p-8 md:p-16 flex flex-col md:flex-row gap-16">
-          <div className="md:w-2/5">
-            <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
+        <div className="bg-card-light dark:bg-card-dark rounded-3xl p-6 md:p-16 flex flex-col lg:flex-row gap-12 md:gap-16">
+          <div className="lg:w-2/5">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
             <p className="text-slate-500 mb-8 leading-relaxed">
-              새로운 비즈니스의 시작부터 혁신적인 도약까지,<br/>
+              새로운 비즈니스의 시작부터 혁신적인 도약까지,<br className="hidden md:block" />
               원스텝 컨설팅이 실질적인 해답을 드립니다.
             </p>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-primary">mail</span>
-                <span className="text-slate-600 dark:text-slate-400">contact@onestep-con.com</span>
+                <span className="text-slate-600 dark:text-slate-400 text-sm md:text-base">contact@onestep-con.com</span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-primary">call</span>
-                <span className="text-slate-600 dark:text-slate-400">02-555-1234</span>
+                <span className="text-slate-600 dark:text-slate-400 text-sm md:text-base">02-555-1234</span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="material-symbols-outlined text-primary">location_on</span>
-                <span className="text-slate-600 dark:text-slate-400">서울특별시 중구 을지로 234</span>
+                <span className="text-slate-600 dark:text-slate-400 text-sm md:text-base">서울특별시 중구 을지로 234</span>
               </div>
             </div>
           </div>
-          <div className="md:w-3/5">
+          <div className="lg:w-3/5">
             <form action="#" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

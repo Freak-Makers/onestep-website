@@ -18,14 +18,14 @@ export default function HomePortfolio() {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-background-dark" id="portfolio">
+    <section className="py-20 md:py-24 bg-white dark:bg-background-dark" id="portfolio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-6 sm:gap-0">
           <div>
             <h2 className="text-3xl font-bold mb-2 text-slate-900 dark:text-slate-100">Success Stories</h2>
             <p className="text-slate-500 dark:text-slate-400">원스텝 컨설팅과 함께 혁신적인 성장을 이룬 프로젝트들을 소개합니다.</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 self-end sm:self-auto">
             <button className="p-2 border border-slate-200 dark:border-slate-700 rounded-full hover:bg-white dark:hover:bg-slate-800 transition-colors text-slate-900 dark:text-slate-100">
               <span className="material-symbols-outlined">chevron_left</span>
             </button>
