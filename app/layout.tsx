@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "pretendard/dist/web/static/pretendard.css";
 import "./globals.css";
 import ScrollToTop from "@/components/common/ScrollToTop";
 
@@ -21,10 +22,6 @@ export default function RootLayout({
         />
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
