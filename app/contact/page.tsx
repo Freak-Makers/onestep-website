@@ -42,7 +42,7 @@ export default function ContactPage() {
         </div>
       </header>
       <main className="py-16 md:py-24 bg-white dark:bg-background-dark">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <ContactForm />
           <FAQ />
         </div>
