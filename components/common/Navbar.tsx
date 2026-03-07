@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 font-semibold text-sm text-slate-900 dark:text-slate-100">
+        <div className="hidden md:flex items-center gap-6 font-light text-lg text-slate-900 dark:text-slate-100">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.href} className="relative group">
@@ -69,7 +69,7 @@ export default function Navbar() {
                       <li key={child.href}>
                         <Link
                           href={child.href}
-                          className="block px-5 py-2.5 text-sm text-slate-700 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors whitespace-nowrap"
+                          className="block px-5 py-2.5 text-base text-slate-700 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors whitespace-nowrap"
                         >
                           {child.label}
                         </Link>
@@ -110,7 +110,7 @@ export default function Navbar() {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         } md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800`}
       >
-        <div className="px-6 py-4 flex flex-col gap-1 font-semibold text-sm text-slate-900 dark:text-slate-100">
+        <div className="px-6 py-4 flex flex-col gap-1 font-semibold text-base text-slate-900 dark:text-slate-100">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.href}>

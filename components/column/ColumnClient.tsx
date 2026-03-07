@@ -83,7 +83,7 @@ export default function ColumnClient({ posts }: { posts: ColumnPost[] }) {
     <>
       {/* ── 히어로 ───────────────────────────── */}
       <header className="py-16 md:py-20 text-center bg-white dark:bg-background-dark px-6">
-        <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4">OneStep 칼럼</p>
+        <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4">OneStep 스토리</p>
         <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-slate-900 dark:text-white">
           비즈니스 성장을 위한<br />
           원스텝만의 독보적인 노하우를 공유합니다.
