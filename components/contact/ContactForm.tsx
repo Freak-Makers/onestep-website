@@ -3,7 +3,7 @@ export default function ContactForm() {
     <section className="py-20 md:py-24" id="contact">
       <div className="bg-card-light dark:bg-card-dark rounded-3xl p-6 md:p-16 flex flex-col lg:flex-row gap-12 md:gap-16">
           <div className="lg:w-2/5">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h2>
             <p className="text-slate-500 mb-8 leading-relaxed">
               새로운 비즈니스의 시작부터 혁신적인 도약까지,<br className="hidden md:block" />
               원스텝 컨설팅이 실질적인 해답을 드립니다.
