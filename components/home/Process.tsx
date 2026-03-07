@@ -1,3 +1,5 @@
+import ScrollReveal from '@/components/common/ScrollReveal';
+
 export default function Process() {
   const steps = [
     {
@@ -35,18 +37,21 @@ export default function Process() {
   return (
     <section className="py-24 bg-slate-50 dark:bg-background-dark/50" id="process">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 text-slate-900 dark:text-slate-100">How We Work</h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base mb-16 max-w-xl mx-auto">
-          체계적인 4단계 프로세스로 대표님의 비즈니스 성공을 만들어 냅니다.
-        </p>
+        <ScrollReveal>
+          <span className="section-label">Process</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-slate-900 dark:text-slate-100">How We Work</h2>
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base mb-16 max-w-xl mx-auto">
+            체계적인 4단계 프로세스로 대표님의 비즈니스 성공을 만들어 냅니다.
+          </p>
+        </ScrollReveal>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-4 relative">
           {/* Connector line (desktop) */}
           <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-slate-200 dark:bg-slate-700 -z-0" />
 
           {steps.map((step, index) => (
-            <div key={index} className="relative flex flex-col items-center max-w-[200px] z-10">
+            <ScrollReveal key={index} delay={index * 130} from="bottom" className="relative flex flex-col items-center max-w-[200px] z-10">
               <div
-                className={`w-20 md:w-24 h-20 md:h-24 rounded-full ${step.circleBg} flex items-center justify-center ${step.iconColor} mb-4 shadow-lg ${step.ring ?? ''} ${step.shadow ?? ''}`}
+                className={`w-20 md:w-24 h-20 md:h-24 rounded-full ${step.circleBg} flex items-center justify-center ${step.iconColor} mb-4 shadow-lg ${step.ring ?? ''} ${step.shadow ?? ''} ${index === steps.length - 1 ? 'animate-pulse-ring' : ''}`}
               >
                 <span className="material-symbols-outlined text-3xl md:text-4xl">{step.icon}</span>
               </div>
@@ -63,7 +68,7 @@ export default function Process() {
                   <span className="material-symbols-outlined">south</span>
                 </div>
               )}
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

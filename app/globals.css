@@ -17,6 +17,52 @@
     @apply bg-white text-slate-900 transition-colors duration-300;
     font-family: var(--font-pretendard);
   }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.45); }
+  70% { box-shadow: 0 0 0 18px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }
 
 @layer components {
@@ -60,5 +106,23 @@
 
   .step-circle:last-child::after {
     @apply lg:hidden;
+  }
+
+  .section-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+  }
+
+  .animate-float {
+    animation: float 3.5s ease-in-out infinite;
+  }
+
+  .animate-pulse-ring {
+    animation: pulseRing 2.2s ease-in-out infinite;
   }
 }

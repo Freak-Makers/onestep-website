@@ -15,6 +15,8 @@ type Category = {
   items: SubItem[];
 };
 
+import ScrollReveal from '@/components/common/ScrollReveal';
+
 const BADGE_CLASSES: Record<BadgeColor, string> = {
   green: 'bg-green-100 text-green-700',
   red: 'bg-red-100 text-red-600',
@@ -64,16 +66,18 @@ export default function Capabilities() {
   return (
     <section className="py-20 md:py-24 bg-white dark:bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14 md:mb-16">
+        <ScrollReveal className="text-center mb-14 md:mb-16">
+          <span className="section-label">Capabilities</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
             비즈니스 성공을 위한 기능성,<br />
             <span className="text-primary">원스텝</span>에서 시작합니다
           </h2>
-        </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {categories.map((cat, i) => (
-            <div key={i}>
+            <ScrollReveal key={i} delay={i * 120} from="bottom">
+            <div>
               {/* Category header */}
               <div className="flex items-center gap-3 mb-3">
                 <div className={`w-10 h-10 rounded-xl ${cat.iconBg} flex items-center justify-center shrink-0`}>
@@ -113,6 +117,7 @@ export default function Capabilities() {
                 ))}
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

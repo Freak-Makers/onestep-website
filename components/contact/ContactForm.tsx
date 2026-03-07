@@ -1,8 +1,11 @@
+import ScrollReveal from '@/components/common/ScrollReveal';
+
 export default function ContactForm() {
   return (
     <section className="py-20 md:py-24" id="contact">
       <div className="bg-card-light dark:bg-card-dark rounded-3xl p-6 md:p-16 flex flex-col lg:flex-row gap-12 md:gap-16">
-          <div className="lg:w-2/5">
+          <ScrollReveal from="left" className="lg:w-2/5">
+            <span className="section-label">Contact</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h2>
             <p className="text-slate-500 mb-8 leading-relaxed">
               새로운 비즈니스의 시작부터 혁신적인 도약까지,<br className="hidden md:block" />
@@ -22,8 +25,8 @@ export default function ContactForm() {
                 <span className="text-slate-600 dark:text-slate-400 text-sm md:text-base">서울특별시 중구 을지로 234</span>
               </div>
             </div>
-          </div>
-          <div className="lg:w-3/5">
+          </ScrollReveal>
+          <ScrollReveal from="right" delay={100} className="lg:w-3/5">
             <form action="#" className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -59,7 +62,7 @@ export default function ContactForm() {
                       type="submit">상담 신청하기
               </button>
             </form>
-          </div>
+          </ScrollReveal>
         </div>
     </section>
   );

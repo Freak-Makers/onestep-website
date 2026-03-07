@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 type NavItem = {
@@ -38,13 +38,21 @@ const navLinks: NavItem[] = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const toggleMobileSubmenu = (label: string) => {
     setOpenMobileMenu(prev => (prev === label ? null : label));
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-slate-200/70 dark:border-slate-800/70 shadow-sm' : 'bg-white/70 dark:bg-background-dark/70 backdrop-blur-sm border-b border-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2 shrink-0">

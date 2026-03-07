@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollReveal from '@/components/common/ScrollReveal';
 
 export default function Services() {
   const services = [
@@ -45,7 +46,8 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           {/* Left sticky sidebar */}
-          <div className="lg:w-1/3 lg:sticky lg:top-24">
+          <ScrollReveal from="left" className="lg:w-1/3 lg:sticky lg:top-24">
+            <span className="section-label">Our Services</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-slate-900 dark:text-slate-100">
               비즈니스를<br />세상과 연결하다
             </h2>
@@ -53,13 +55,13 @@ export default function Services() {
               복잡한 비즈니스 환경에서도 흔들리지 않는 명확한 성공 방정식을 제시합니다.
               대표님의 비즈니스에 딱 맞는 솔루션을 설계합니다.
             </p>
-          </div>
+          </ScrollReveal>
 
           {/* Right 3x2 grid */}
           <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-4">
             {services.map((service, i) => (
+              <ScrollReveal key={i} delay={i * 80} from="bottom">
               <div
-                key={i}
                 className="group bg-white dark:bg-card-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer"
               >
                 <div className="aspect-[4/3] overflow-hidden">
@@ -78,6 +80,7 @@ export default function Services() {
                   </p>
                 </div>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

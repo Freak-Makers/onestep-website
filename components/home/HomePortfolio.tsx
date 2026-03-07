@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ScrollReveal from '@/components/common/ScrollReveal';
 
 export default function HomePortfolio() {
   const stories = [
@@ -25,8 +26,9 @@ export default function HomePortfolio() {
   return (
     <section className="py-20 md:py-24 bg-white dark:bg-background-dark" id="portfolio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-end mb-12">
+        <ScrollReveal className="flex justify-between items-end mb-12">
           <div>
+            <span className="section-label">Portfolio</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-2 text-slate-900 dark:text-slate-100">Portfolio</h2>
             <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
               원스텝 컨설팅과 함께 성장한 프로젝트들을 소개합니다.
@@ -39,11 +41,12 @@ export default function HomePortfolio() {
             전체 보기
             <span className="material-symbols-outlined text-base">arrow_forward</span>
           </Link>
-        </div>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stories.map((story, index) => (
-            <Link href="/portfolio" key={index} className="group block">
+            <ScrollReveal key={index} delay={index * 100} from="bottom">
+            <Link href="/portfolio" className="group block">
               <div className="relative overflow-hidden rounded-2xl aspect-[4/3]">
                 <img
                   alt={story.title}
@@ -57,6 +60,7 @@ export default function HomePortfolio() {
                 </div>
               </div>
             </Link>
+            </ScrollReveal>
           ))}
         </div>
       </div>
