@@ -42,8 +42,8 @@ export default function PortfolioPage() {
       <Navbar />
       <header className="py-16 md:py-20 text-center bg-white dark:bg-background-dark px-6">
         <p className="text-primary font-semibold mb-4">포트폴리오</p>
-        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-slate-900 dark:text-white leading-tight">원스텝의 진짜 후기를 확인해 보세요</h1>
-        <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">원스텝의 실제 클라이언트분들이 말하는 100% 진짜 후기를 보여드립니다.</p>
+        <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-slate-900 dark:text-white leading-tight">원스텝 컨설팅, 직접 확인해 보세요</h1>
+        <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">실제 고객분들이 경험한 컨설팅 결과와 솔직한 후기를 공유합니다.</p>
       </header>
       <main className="bg-white dark:bg-background-dark">
         <section className="max-w-7xl mx-auto px-6 pb-24">
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
 
         <section className="bg-slate-50 dark:bg-background-dark/50 py-20 md:py-24">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-8 text-slate-900 dark:text-white leading-tight">재계약률 99% 고객 후기가<br className="md:hidden" /> 증명하는 1위 마케팅 회사</h2>
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-8 text-slate-900 dark:text-white leading-tight">고객이 다시 찾는<br className="md:hidden" /> 종합 금융 컨설팅 팀</h2>
             <div className="flex flex-row justify-center gap-8 md:gap-12 mb-16">
               <div className="flex items-center gap-3 md:gap-4">
                 <div className="p-2 md:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl"><span className="material-icons text-primary text-xl md:text-2xl">military_tech</span></div>
@@ -119,8 +119,8 @@ export default function PortfolioPage() {
             </div>
 
             <div className="text-center mb-12 md:mb-16 px-4">
-              <p className="text-primary text-xs md:text-sm font-bold mb-2">크몽 리뷰 100%</p>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">결국 원스텝을 선택한<br />고객분들의 솔직한 이야기</h2>
+              <p className="text-primary text-xs md:text-sm font-bold mb-2">고객 후기</p>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">원스텝을 선택한<br />고객분들의 솔직한 이야기</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -136,31 +136,31 @@ export default function PortfolioPage() {
             </div>
 
             <div className="mt-20 md:mt-24">
-              <h2 className="text-xl md:text-2xl font-bold text-center mb-10 md:mb-12 text-slate-900 dark:text-white">서비스별 포트폴리오 상세히 살펴보기</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-center mb-10 md:mb-12 text-slate-900 dark:text-white">서비스별 컨설팅 자세히 살펴보기</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">전문직 마케팅</p>
-                  <div className="flex items-end justify-between">
-                    <div className="p-2 md:p-3 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-600">
-                      <span className="material-icons text-xl md:text-2xl">architecture</span>
-                    </div>
-                    <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
-                  </div>
-                </Link>
-                <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">사업자 마케팅</p>
-                  <div className="flex items-end justify-between">
-                    <div className="p-2 md:p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
-                      <span className="material-icons text-xl md:text-2xl">storefront</span>
-                    </div>
-                    <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
-                  </div>
-                </Link>
-                <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
-                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">홈페이지 디자인</p>
+                <Link href="/services/corporate-finance" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">기업 금융 컨설팅</p>
                   <div className="flex items-end justify-between">
                     <div className="p-2 md:p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl text-blue-600">
-                      <span className="material-icons text-xl md:text-2xl">web</span>
+                      <span className="material-icons text-xl md:text-2xl">account_balance</span>
+                    </div>
+                    <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                  </div>
+                </Link>
+                <Link href="/services/personal-finance" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">개인 재무 컨설팅</p>
+                  <div className="flex items-end justify-between">
+                    <div className="p-2 md:p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl text-emerald-600">
+                      <span className="material-icons text-xl md:text-2xl">person</span>
+                    </div>
+                    <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
+                  </div>
+                </Link>
+                <Link href="/services" className="group block p-6 md:p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-card-dark hover:border-primary/30 dark:hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all">
+                  <p className="font-bold text-base md:text-lg mb-6 text-left text-slate-900 dark:text-white">부동산 자금 컨설팅</p>
+                  <div className="flex items-end justify-between">
+                    <div className="p-2 md:p-3 bg-purple-100 dark:bg-purple-900/30 rounded-xl text-purple-600">
+                      <span className="material-icons text-xl md:text-2xl">home</span>
                     </div>
                     <span className="material-icons text-slate-300 group-hover:text-primary transition-colors">trending_flat</span>
                   </div>
@@ -175,8 +175,8 @@ export default function PortfolioPage() {
           <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-[2px]"></div>
           <div className="relative max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="text-white">
-              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">저희의 목표는 단 하나,<br />대표님의 사업을 성공시키는 것</h2>
-              <p className="text-sm md:text-base text-slate-300">원스텝 컨설팅은 오직 대표님만을 위해 밤낮없이 일합니다.</p>
+              <h2 className="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">원스텝의 목표는 단 하나,<br />고객의 금융 선택이 합리적인 결과로 이어지는 것</h2>
+              <p className="text-sm md:text-base text-slate-300">금융 선택을 컨설팅으로, 컨설팅을 인생의 전환점으로.</p>
             </div>
             <Link href="/contact" className="inline-flex items-center justify-center px-8 md:px-10 py-3 md:py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors shadow-lg">문의하기</Link>
           </div>

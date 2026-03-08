@@ -25,39 +25,40 @@ const BADGE_CLASSES: Record<BadgeColor, string> = {
 
 const categories: Category[] = [
   {
-    icon: 'business_center',
+    icon: 'account_balance',
     iconBg: 'bg-blue-100 dark:bg-blue-900/30',
     iconColor: 'text-primary',
-    title: '전문직 마케팅',
-    description: '전문직 종사자를 위한 최적화된 디지털 마케팅으로 신규 고객을 유치합니다.',
+    title: '기업 금융 컨설팅',
+    description: '사업자와 법인을 위한 정책자금, 기업인증, 절세 구조를 전략적으로 설계합니다.',
     items: [
-      { title: '블로그 마케팅', badge: 'NAVER', badgeColor: 'green' },
-      { title: '병원 SNS 마케팅' },
-      { title: '영어학원 마케팅' },
-      { title: '법무 / 노무 마케팅' },
+      { title: '정책자금 컨설팅', badge: '무상지원', badgeColor: 'green' },
+      { title: '기업인증 자문', badge: 'NEW', badgeColor: 'red' },
+      { title: '기업 절세 컨설팅' },
+      { title: '창업 및 법인 설계' },
     ],
   },
   {
-    icon: 'storefront',
+    icon: 'home',
     iconBg: 'bg-emerald-100 dark:bg-emerald-900/30',
     iconColor: 'text-emerald-600',
-    title: '사업자 마케팅',
-    description: '소상공인 및 자영업자를 위한 맞춤형 마케팅 전략으로 매출을 극대화합니다.',
+    title: '부동산 자금 컨설팅',
+    description: '내 집 마련부터 수익형 투자, 건물·PF 구조까지 자금 전략을 함께 수립합니다.',
     items: [
-      { title: '블로그 마케팅', badge: 'NAVER', badgeColor: 'green' },
-      { title: '병원 SNS 마케팅', badge: 'NEW', badgeColor: 'red' },
-      { title: '인스타그램 관리 대행' },
+      { title: '내 집 마련 전략 수립' },
+      { title: '수익형 부동산 자금 설계' },
+      { title: '건물·PF 투자 구조 자문', badge: 'NEW', badgeColor: 'red' },
     ],
   },
   {
-    icon: 'palette',
+    icon: 'person',
     iconBg: 'bg-purple-100 dark:bg-purple-900/30',
     iconColor: 'text-purple-600',
-    title: '브랜딩 디자인 팀',
-    description: '브랜드 가치를 높이는 전문 디자인 솔루션으로 차별화된 인상을 만듭니다.',
+    title: '개인 재무 컨설팅',
+    description: '보험 리밸런싱부터 생애주기 포트폴리오까지 개인의 재무 목표를 체계적으로 설계합니다.',
     items: [
-      { title: '홈페이지 제작', badge: 'NEW', badgeColor: 'red' },
-      { title: '로고 제작' },
+      { title: '금융 상품 활용 전략', badge: '추천', badgeColor: 'blue' },
+      { title: '보험 점검 및 리밸런싱' },
+      { title: '생애주기 재무 포트폴리오' },
     ],
   },
 ];
@@ -69,8 +70,8 @@ export default function Capabilities() {
         <ScrollReveal className="text-center mb-14 md:mb-16">
           <span className="section-label">Capabilities</span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 leading-tight">
-            비즈니스 성공을 위한 기능성,<br />
-            <span className="text-primary">원스텝</span>에서 시작합니다
+            하나의 창구에서<br />
+            <span className="text-primary">모든 금융 고민</span>을 해결합니다
           </h2>
         </ScrollReveal>
 

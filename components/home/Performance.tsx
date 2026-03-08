@@ -2,8 +2,8 @@ import ScrollReveal from '@/components/common/ScrollReveal';
 
 export default function Performance() {
   const stats = [
-    { label: '함께한 파트너 기업', value: '1,367+' },
-    { label: '파트너사 재계약률', value: '90%' },
+    { label: '구축된 전문 파트너 네트워크', value: '5개 분야+' },
+    { label: '고객 재상담률', value: '90%' },
     { label: '고객 만족도', value: '90%' },
   ];
 
@@ -19,7 +19,7 @@ export default function Performance() {
           <span className="section-label" style={{ color: 'rgba(147,197,253,0.9)' }}>Performance</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-3 md:mb-4">Our Performance</h2>
           <p className="text-blue-200 text-sm md:text-base mb-12 md:mb-16">
-            숫자로 증명하는 원스텝 컨설팅의 실적입니다.
+            금융 선택이 합리적인 결과로 이어진 원스텝의 실적입니다.
           </p>
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">

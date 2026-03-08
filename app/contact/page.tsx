@@ -13,12 +13,12 @@ export default function ContactPage() {
             <div className="lg:w-1/2 text-center lg:text-left">
               <span className="inline-block px-4 py-1 rounded-full bg-blue-100 text-primary text-sm font-bold mb-4">Consulting Inquiry</span>
               <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mb-6 text-slate-900 dark:text-white">
-                전문적인 컨설팅으로<br />
-                <span className="text-primary">비즈니스의 해답</span>을 찾으세요.
+                금융 고민의 시작점,<br />
+                <span className="text-primary">원스텝과 함께</span> 풀어보세요.
               </h1>
               <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-                단순한 대행을 넘어 브랜드의 가치를 발견하고<br className="hidden md:block" />
-                지속 가능한 성장을 위한 최적의 전략을 제안합니다.
+                부동산, 정책자금, 절세, 개인재무 — 어떤 고민이든 좋습니다.<br className="hidden md:block" />
+                원스텝이 가장 합리적인 방향을 함께 설계하겠습니다.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
                 <div className="flex -space-x-2">
@@ -26,7 +26,7 @@ export default function ContactPage() {
                   <div className="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
                   <div className="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
                 </div>
-                <p className="text-sm text-slate-500 font-medium">1,367개 이상의 기업이<br className="sm:hidden" /> 선택한 마케팅 전문가 팀</p>
+                <p className="text-sm text-slate-500 font-medium">부동산 · 정책자금 · 기업자문 · 세무 · 개인재무<br className="sm:hidden" /> 5개 분야 종합 금융 컨설팅</p>
               </div>
             </div>
             <div className="lg:w-1/2 w-full">

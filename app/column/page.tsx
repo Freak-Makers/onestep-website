@@ -5,8 +5,8 @@ import ColumnClient from '@/components/column/ColumnClient';
 import { getAllPosts } from '@/lib/column';
 
 export const metadata: Metadata = {
-  title: '칼럼 | OneStep Consulting',
-  description: '원스텝 컨설팅의 비즈니스 인사이트와 노하우를 담은 칼럼입니다.',
+  title: '칼럼 | 원스텝컨설팅',
+  description: '부동산, 정책자금, 기업자문, 세무, 개인재무에 관한 원스텝컨설팅의 금융 인사이트와 전략을 담은 칼럼입니다.',
 };
 
 export default async function ColumnPage() {

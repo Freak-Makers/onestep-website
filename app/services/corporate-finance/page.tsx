@@ -108,9 +108,9 @@ export default function CorporateFinancePage() {
                     {/* 텍스트 */}
                     <div className="relative z-10 h-full flex items-center">
                         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
-                            <p className="text-white/80 text-sm font-medium mb-3">전문직 마케팅</p>
+                            <p className="text-white/80 text-sm font-medium mb-3">기업 금융 컨설팅</p>
                             <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
-                                원스텝은 결과로 증명합니다
+                                기업의 자금 구조를<br />전략적으로 설계합니다
                             </h1>
                         </div>
                     </div>
@@ -124,12 +124,12 @@ export default function CorporateFinancePage() {
                     <div className="relative z-10 max-w-3xl mx-auto text-center">
                         <span className="material-icons text-white/60 text-5xl mb-6 block">format_quote</span>
                         <h2 className="text-xl md:text-3xl font-extrabold text-white leading-snug mb-6">
-                            전문직분들께서 저희에게 대행 후,<br/>
-                            문의량이 평균 335% 늘어난 이유는 무엇일까요?
+                            사업자에게 가장 중요한 것은<br/>
+                            자금 구조를 제대로 이해하는 것입니다.
                         </h2>
                         <p className="text-white/70 text-sm md:text-base leading-relaxed">
-                            고객사 3,000여 개 보유 세무법인 그리고 연매출 약 400억 규모의 법무법인까지<br className="hidden md:block"/>
-                            원스텝컨설팅은 전문직에 최적화된 금융 솔루션을 제공해드리고 있습니다.
+                            정책자금, 기업인증, 절세 구조 — 세 가지가 맞물릴 때 기업의 재무 체력이 만들어집니다.<br className="hidden md:block"/>
+                            원스텝컨설팅은 창업 초기부터 성장 단계까지 기업 금융의 전 과정을 함께 설계합니다.
                         </p>
                     </div>
                 </section>
@@ -143,13 +143,13 @@ export default function CorporateFinancePage() {
                             <div className="md:w-1/2">
                                 <p className="text-primary font-bold text-sm mb-2">01</p>
                                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                                    전문적인 상담으로<br />차별화된 서비스 제공
+                                    정책자금 진단 및<br />자금 구조 설계
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    단순한 조언이 아닌, 고객의 재무 상황을 정밀 진단한 후 맞춤 전략을 수립합니다. 전담 컨설턴트가 처음부터 끝까지 동행합니다.
+                                    창업자와 사업자를 위한 무상지원금·융자금을 진단하고, 금융기관과 보증기관 전략을 수립합니다.
                                 </p>
                                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                                    국내 최고 수준의 재무 전문가팀이 직접 상담하며, 평균 응답 시간 2시간 이내로 신속하게 서비스를 제공합니다.
+                                    정책자금 컨설팅 파트너 및 은행 지점장 네트워크를 통해 최적의 자금 조달 경로를 찾아드립니다.
                                 </p>
                             </div>
                             <div className="md:w-1/2 w-full">
@@ -164,13 +164,13 @@ export default function CorporateFinancePage() {
                             <div className="md:w-1/2">
                                 <p className="text-primary font-bold text-sm mb-2">02</p>
                                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                                    데이터 기반 투자 전략으로<br />가치를 높이는 전문적 진행
+                                    기업인증으로<br />경쟁력과 신뢰를 높입니다
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    시장 데이터와 개인 재무 데이터를 결합하여 최적의 투자 포트폴리오를 설계합니다. 리스크를 최소화하면서 수익을 극대화합니다.
+                                    벤처기업 인증, 메인비즈, 이노비즈, ISO 인증 — 기업 가치를 높이는 인증 전략을 함께 수립합니다.
                                 </p>
                                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                                    AI 기반 분석 도구와 전문가의 직관을 결합하여 빠르게 변하는 금융 시장에서도 안정적인 성과를 유지합니다.
+                                    인증 취득은 단순한 타이틀이 아닙니다. 정책자금 접근성 향상, 입찰 경쟁력 강화 등 실질적인 사업 효과로 이어집니다.
                                 </p>
                             </div>
                             <div className="md:w-1/2 w-full">
@@ -185,13 +185,13 @@ export default function CorporateFinancePage() {
                             <div className="md:w-1/2">
                                 <p className="text-primary font-bold text-sm mb-2">03</p>
                                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                                    데이터에 기반한<br />체계적인 성과 보고서
+                                    절세 구조 설계로<br />세무 부담을 최적화합니다
                                 </h3>
                                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                                    월별 재무 성과를 정량적 지표로 명확하게 보고합니다. 자산 변화, 수익률, 절세 효과를 한눈에 확인할 수 있습니다.
+                                    창업 및 법인 설계, 급여·배당·상속·증여 구조를 설계합니다. 세무사·회계사와 협업하여 합법적이고 효과적인 절세 방안을 제시합니다.
                                 </p>
                                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                                    모든 데이터는 실시간으로 업데이트되며, 전용 대시보드를 통해 언제든지 현황을 확인하실 수 있습니다.
+                                    단순한 세금 줄이기가 아닌, 기업의 장기적인 재무 구조를 고려한 체계적인 절세 설계를 제공합니다.
                                 </p>
                             </div>
                             <div className="md:w-1/2 w-full">
@@ -213,10 +213,10 @@ export default function CorporateFinancePage() {
                         {/* 헤더 */}
                         <div className="text-center mb-12">
                             <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-4">
-                                핸디 사업자 마케팅팀 성과
+                                원스텝 기업 금융 컨설팅 성과
                             </h2>
                             <p className="text-white/70 text-sm md:text-base">
-                                저희와 함께한 고객들은 이미 &apos;이런 성과&apos;를 달성하셨습니다.
+                                전략적인 자금 설계와 인증 취득으로 실질적인 기업 경쟁력을 만들어 드립니다.
                             </p>
                         </div>
 
@@ -224,19 +224,19 @@ export default function CorporateFinancePage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-14">
                             {[
                                 {
-                                    company: 'N사 이사청소 업체',
-                                    lines: ['대행 6개월 간', '1억 7천만 원 매출 달성'],
-                                    bold: '1억 7천만 원 매출 달성',
+                                    company: '초기 창업 사업자',
+                                    lines: ['정책자금 컨설팅으로', '무상지원금 확보 성공'],
+                                    bold: '무상지원금 확보 성공',
                                 },
                                 {
-                                    company: 'L사 인테리어 업체',
-                                    lines: ['대행 2달만에', '1억 2천만 원치 문의 유입'],
-                                    bold: '1억 2천만 원치 문의 유입',
+                                    company: '중소 법인 대표',
+                                    lines: ['급여·배당 구조 설계로', '절세 효과 극대화'],
+                                    bold: '절세 효과 극대화',
                                 },
                                 {
-                                    company: 'B사 테니스 레슨장',
-                                    lines: ['대행 1달만에 문의 24건,', '12명 신규생 유입'],
-                                    bold: '12명 신규생 유입',
+                                    company: '성장기 스타트업',
+                                    lines: ['벤처기업 인증 취득으로', '투자 유치 경쟁력 확보'],
+                                    bold: '투자 유치 경쟁력 확보',
                                 },
                             ].map((item, idx) => (
                                 <div
@@ -329,10 +329,10 @@ export default function CorporateFinancePage() {
                     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* 헤더 */}
                         <div className="text-center mb-12">
-                            <p className="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-widest mb-4">사업자 마케팅</p>
+                            <p className="text-emerald-600 dark:text-emerald-400 font-bold text-sm tracking-widest mb-4">기업 금융 컨설팅</p>
                             <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 dark:text-white leading-snug">
-                                대표님들 <span className="text-emerald-600 dark:text-emerald-400">92%</span>가 매월<br/>
-                                재계약 하시는 이유는 무엇일까요?
+                                원스텝이 기업 금융 컨설팅에서<br/>
+                                신뢰받는 이유는 무엇일까요?
                             </h2>
                         </div>
 
@@ -340,19 +340,19 @@ export default function CorporateFinancePage() {
                         <div className="flex flex-col gap-5">
                             {[
                                 {
-                                    title: '단순 행위보다 매출상승을\n우선시하여 마케팅합니다.',
-                                    description: '문의가 많으면 유입경로를, 기대에 못미치면 개선 방향을 제안하여 매출 상승을 위한 최적의 솔루션을 제공합니다.',
-                                    icon: 'trending_up',
+                                    title: '자금 조달부터 구조 설계까지\n원스텝에서 해결합니다.',
+                                    description: '정책자금 진단, 금융기관 전략, 보증기관 활용까지 — 기업의 자금 조달 전 과정을 체계적으로 설계합니다.',
+                                    icon: 'account_balance',
                                 },
                                 {
-                                    title: '\'실제 유효 데이터\'로\n체계적으로 진행합니다.',
-                                    description: '업종별 유효 키워드, 구매전환에 유리한 채널 방향성 등 자체적으로 검증된 실제 데이터를 기반으로 진행합니다.',
-                                    icon: 'analytics',
+                                    title: '전문 파트너 네트워크로\n실행력을 높입니다.',
+                                    description: '세무사·회계사·법인 절세 컨설팅 파트너·은행 지점장 네트워크를 통해 복합적인 기업 금융 문제를 해결합니다.',
+                                    icon: 'groups',
                                 },
                                 {
-                                    title: '핸디 디자인팀과 협업하여\n완벽한 디자인을 제공합니다.',
-                                    description: '국내 1위 비즈니스 중개 플랫폼에서 5.0을 받은 핸디디자인팀과 협업하여 최적화된 디자인을 제공합니다.',
-                                    icon: 'design_services',
+                                    title: '인증 취득으로\n기업 가치를 실질적으로 높입니다.',
+                                    description: '벤처·이노비즈·메인비즈·ISO 인증은 단순한 타이틀이 아닙니다. 정책자금 접근성, 입찰 경쟁력, 투자 유치로 연결됩니다.',
+                                    icon: 'verified',
                                 },
                             ].map((item, idx) => (
                                 <div
@@ -383,17 +383,17 @@ export default function CorporateFinancePage() {
                     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* 제목 */}
                         <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white text-center mb-10">
-                            사업자 마케팅 서비스는 이렇게 진행됩니다
+                            기업 금융 컨설팅 서비스는 이렇게 진행됩니다
                         </h2>
 
                         {/* 서비스 네비게이션 카드 */}
                         <div className="flex flex-wrap justify-center gap-3 mb-16">
                             {[
-                                {label: '브랜드 블로그 관리', icon: 'rss_feed', iconBg: 'bg-green-500', targetId: 'service-brand-blog'},
-                                {label: '인스타그램 관리', icon: 'photo_camera', iconBg: 'bg-gradient-to-br from-purple-500 to-pink-500', targetId: 'service-instagram'},
-                                {label: '체험단·기자단 마케팅', icon: 'campaign', iconBg: 'bg-purple-500', targetId: 'service-experience'},
-                                {label: '플레이스 관리', icon: 'location_on', iconBg: 'bg-emerald-500', targetId: 'service-place'},
-                                {label: 'SEO 최적화', icon: 'search', iconBg: 'bg-rose-500', targetId: 'service-seo'},
+                                {label: '정책자금 컨설팅', icon: 'account_balance', iconBg: 'bg-blue-500', targetId: 'service-policy-fund'},
+                                {label: '기업인증 자문', icon: 'verified', iconBg: 'bg-emerald-500', targetId: 'service-certification'},
+                                {label: '기업 절세 컨설팅', icon: 'receipt_long', iconBg: 'bg-purple-500', targetId: 'service-tax'},
+                                {label: '창업·법인 설계', icon: 'business_center', iconBg: 'bg-rose-500', targetId: 'service-corp-setup'},
+                                {label: '네트워크 자문', icon: 'groups', iconBg: 'bg-amber-500', targetId: 'service-network'},
                             ].map((nav) => (
                                 <button
                                     key={nav.targetId}
@@ -417,44 +417,44 @@ export default function CorporateFinancePage() {
                         <div className="flex flex-col">
                             {[
                                 {
-                                    id: 'service-brand-blog',
-                                    num: '사업자 마케팅 서비스 1',
-                                    title: '브랜드 블로그',
-                                    description: '키워드 및 검색알고리즘 대응 노출시키는 전략과\n고객을 설득시키는 글쓰기까지 전부 책임해 드립니다.',
-                                    cardBg: 'from-green-400 to-emerald-500',
-                                    icon: 'menu_book',
+                                    id: 'service-policy-fund',
+                                    num: '기업 금융 컨설팅 서비스 1',
+                                    title: '정책자금 컨설팅',
+                                    description: '창업자·사업자 대상 정책자금을 진단하고\n무상지원금 / 융자금 구조를 설계합니다.\n금융기관 및 보증기관 전략을 함께 수립합니다.',
+                                    cardBg: 'from-blue-400 to-blue-600',
+                                    icon: 'account_balance',
                                 },
                                 {
-                                    id: 'service-instagram',
-                                    num: '사업자 마케팅 서비스 2',
-                                    title: '인스타그램',
-                                    description: '지속적으로 빠지는 인스타그램 로직 분석부터 고객이 좋아할만한\n콘텐츠 제작까지 처음부터 전부 진행해 드리겠습니다.',
-                                    cardBg: 'from-pink-400 to-purple-500',
-                                    icon: 'photo_camera',
+                                    id: 'service-certification',
+                                    num: '기업 금융 컨설팅 서비스 2',
+                                    title: '기업인증 자문',
+                                    description: '벤처기업 인증, 메인비즈, 이노비즈,\nISO 인증 취득 전략을 함께 수립합니다.\n인증 취득으로 기업의 신뢰도와 경쟁력을 높입니다.',
+                                    cardBg: 'from-emerald-400 to-green-600',
+                                    icon: 'verified',
                                 },
                                 {
-                                    id: 'service-experience',
-                                    num: '사업자 마케팅 서비스 3',
-                                    title: '체험단·기자단 마케팅',
-                                    description: '바이럴로 발행되고 있는 블로거들의 체험단, 기자단 형태로\n여러분의 브랜드에 관한 글을 작성하여\n고객으로부터 신뢰를 얻을 수 있게 만들어 드립니다.',
-                                    cardBg: 'from-rose-400 to-pink-500',
-                                    icon: 'campaign',
+                                    id: 'service-tax',
+                                    num: '기업 금융 컨설팅 서비스 3',
+                                    title: '기업 절세 컨설팅',
+                                    description: '급여·배당·상속·증여 구조를 분석하고\n합법적인 절세 방안을 설계합니다.\n세무사·회계사와 협업하여 최적의 구조를 제안합니다.',
+                                    cardBg: 'from-purple-400 to-violet-600',
+                                    icon: 'receipt_long',
                                 },
                                 {
-                                    id: 'service-place',
-                                    num: '사업자 마케팅 서비스 4',
-                                    title: '스마트플레이스',
-                                    description: '네이버 플레이스 상 페이지가 노출 될 수 있도록\n플레이스 내부 세팅 작업부터 트래픽 작업까지 전부 진행해 드립니다.',
-                                    cardBg: 'from-emerald-400 to-green-500',
-                                    icon: 'location_on',
+                                    id: 'service-corp-setup',
+                                    num: '기업 금융 컨설팅 서비스 4',
+                                    title: '창업·법인 설계',
+                                    description: '창업 초기 법인 설계부터 사업 구조 최적화까지\n장기적인 재무 체력을 갖출 수 있도록 함께 설계합니다.',
+                                    cardBg: 'from-rose-400 to-pink-600',
+                                    icon: 'business_center',
                                 },
                                 {
-                                    id: 'service-seo',
-                                    num: '사업자 마케팅 서비스 5',
-                                    title: 'SEO 최적화',
-                                    description: 'SEO 최적화 작업을 통해 해당 검색 시\n최적화될 수 있도록 진행해 드립니다.',
-                                    cardBg: 'from-blue-400 to-indigo-500',
-                                    icon: 'search',
+                                    id: 'service-network',
+                                    num: '기업 금융 컨설팅 서비스 5',
+                                    title: '네트워크 자문',
+                                    description: '세무사·은행 지점장·법무사·노무사 등\n분야별 전문가 네트워크를 연결해 드립니다.\n복합적인 기업 금융 문제를 종합적으로 해결합니다.',
+                                    cardBg: 'from-amber-400 to-orange-500',
+                                    icon: 'groups',
                                 },
                             ].map((service, idx) => (
                                 <div key={service.id}>
@@ -487,10 +487,10 @@ export default function CorporateFinancePage() {
                         <div className="flex justify-center mt-12">
                             <Link
                                 href="/contact"
-                                className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-7 py-3.5 rounded-full text-sm transition-colors shadow-md"
+                                className="flex items-center gap-2 bg-primary hover:bg-blue-700 text-white font-bold px-7 py-3.5 rounded-full text-sm transition-colors shadow-md"
                             >
-                                <span className="material-symbols-outlined text-base">download</span>
-                                사업자 마케팅 서비스 소개서 다운 받기
+                                <span className="material-symbols-outlined text-base">chat</span>
+                                기업 금융 컨설팅 상담 신청하기
                             </Link>
                         </div>
                     </div>
@@ -501,39 +501,39 @@ export default function CorporateFinancePage() {
                     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* 제목 */}
                         <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white text-center leading-snug mb-12">
-                            문의량이 최소 <span className="text-emerald-500">3배 이상</span> 증가하신<br/>
-                            클라이언트 중 일부를 소개합니다
+                            기업 금융 컨설팅으로<br/>
+                            실질적인 변화를 만든 사례입니다
                         </h2>
 
                         {/* 카드 목록 */}
                         <div className="flex flex-col gap-5">
                             {[
                                 {
-                                    result: '대행 2달만에\n1달치 TO마감, 30건 이상 수임',
-                                    category: '정리수납 전문 니마스',
-                                    brand: 'NAS',
-                                    brandIcon: 'skip_next',
-                                    cardBg: 'from-slate-100 to-slate-200 dark:from-slate-700 dark:to-slate-600',
-                                    icon: 'person',
-                                    iconColor: 'text-slate-400',
+                                    result: '정책자금 진단으로\n무상지원금 수혜 성공',
+                                    category: '제조업 초기 창업자',
+                                    brand: '정책자금 컨설팅',
+                                    brandIcon: 'account_balance',
+                                    cardBg: 'from-blue-100 to-blue-200 dark:from-slate-700 dark:to-slate-600',
+                                    icon: 'account_balance',
+                                    iconColor: 'text-blue-400',
                                 },
                                 {
-                                    result: '대행 1달만에\n홈페이지 유입량 352% 증가\n프로필 방문율 1,180% 증가',
-                                    category: '패션 브랜드 엔씨아래팀',
-                                    brand: 'MIKVE',
-                                    brandIcon: 'checkroom',
-                                    cardBg: 'from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-600',
-                                    icon: 'checkroom',
-                                    iconColor: 'text-slate-500',
+                                    result: '벤처기업 인증 취득으로\n투자 유치 경쟁력 확보',
+                                    category: 'IT 스타트업',
+                                    brand: '기업인증 자문',
+                                    brandIcon: 'verified',
+                                    cardBg: 'from-emerald-100 to-emerald-200 dark:from-slate-700 dark:to-slate-600',
+                                    icon: 'verified',
+                                    iconColor: 'text-emerald-500',
                                 },
                                 {
-                                    result: '채널 개설 한달만에 원하시는\n분야로 문의전환 성공\n1,227명에게 노출',
-                                    category: '미국 영주건 비자 전문 서래금로법리갈센터',
-                                    brand: '서래',
-                                    brandIcon: 'gavel',
-                                    cardBg: 'from-slate-600 to-slate-700 dark:from-slate-700 dark:to-slate-800',
-                                    icon: 'apartment',
-                                    iconColor: 'text-slate-300',
+                                    result: '급여·배당 구조 최적화로\n세무 부담 실질 절감',
+                                    category: '중소 법인 대표',
+                                    brand: '기업 절세 컨설팅',
+                                    brandIcon: 'receipt_long',
+                                    cardBg: 'from-purple-100 to-purple-200 dark:from-slate-700 dark:to-slate-800',
+                                    icon: 'receipt_long',
+                                    iconColor: 'text-purple-500',
                                 },
                             ].map((item, idx) => (
                                 <div
@@ -594,53 +594,43 @@ export default function CorporateFinancePage() {
                         <div>
                             {[
                                 {
-                                    q: '블로그나 인스타그램이나, 어디까지 관리해 주는거에요?',
+                                    q: '창업 전에도 정책자금 컨설팅을 받을 수 있나요?',
                                     a: (
                                         <>
                                             <p className="font-bold text-slate-900 dark:text-white mb-6">
-                                                계정만 전달해주시면 그다음은 저희가 전부 진행해드립니다 :)
+                                                네, 창업 전 단계부터 상담을 시작하는 것이 오히려 유리합니다.
                                             </p>
                                             <p className="text-slate-600 dark:text-slate-400 mb-6">
-                                                원스텝컨설팅은 기본적인 디자인 세팅부터<br/>
-                                                콘텐츠 기획, 발행까지 전부 올인원으로 대행해드리고 있어요.
-                                            </p>
-                                            <p className="text-slate-600 dark:text-slate-400 mb-6">
-                                                대표님께서 마케팅 대행 맡기신 이후 별도로 하실 일 없이,<br/>
-                                                전략 수립부터 실무 집행까지 전부 맡아 진행합니다.
-                                            </p>
-                                            <p className="text-slate-600 dark:text-slate-400 mb-6">
-                                                다만 인스타그램 릴스의 경우<br/>
-                                                영상 촬영이 필요한 콘텐츠는 대표님께서 직접 촬영해 주셔야 됩니다!
+                                                창업 초기에 활용할 수 있는 무상지원금과 융자금 프로그램이 다양하게 존재합니다.<br/>
+                                                사업 형태와 업종에 따라 적합한 정책자금이 달라지므로, 사전에 진단을 받으시는 것을 권장드립니다.
                                             </p>
                                             <p className="text-slate-600 dark:text-slate-400">
-                                                물론 촬영이 결코 어렵지 않도록 상세한 가이드라인을 제공해드리고,<br/>
-                                                핸드폰으로도 쉽게 따라 하실 수 있게 도와드리니<br/>
-                                                이 점에 대해서도 전혀 걱정하실 필요 없습니다 :)
+                                                원스텝은 창업 준비 단계부터 법인 설계, 정책자금 신청까지 전 과정을 함께 설계해 드립니다.
                                             </p>
                                         </>
                                     ),
                                 },
                                 {
-                                    q: '사전미팅도 가능한가요?',
+                                    q: '기업인증 취득까지 시간이 얼마나 걸리나요?',
                                     a: (
                                         <p className="text-slate-600 dark:text-slate-400">
-                                            네, 물론 가능합니다. 온라인/오프라인 미팅 모두 지원하며, 상담 신청 후 일정을 조율해 드립니다.
+                                            인증 종류에 따라 다르지만 일반적으로 벤처기업 인증은 1~2개월, 이노비즈·메인비즈는 2~4개월 내외입니다. 사전 준비 상태에 따라 달라질 수 있으며, 원스텝이 전 과정을 함께 진행합니다.
                                         </p>
                                     ),
                                 },
                                 {
-                                    q: '우선 1개월만 진행해 보고 싶어요. 가능한가요?',
+                                    q: '세무사·회계사와 직접 연결도 가능한가요?',
                                     a: (
                                         <p className="text-slate-600 dark:text-slate-400">
-                                            1개월 단기 진행도 가능합니다. 다만 실질적인 효과는 최소 3개월 이상 지속 운영 시 나타나므로, 장기 파트너십을 권장드립니다.
+                                            네, 원스텝은 세무사·회계사 파트너 네트워크를 보유하고 있습니다. 고객의 상황에 맞는 전문가를 선별하여 연결해 드리며, 컨설팅 과정에서 협업을 통해 통합적인 절세 구조를 설계합니다.
                                         </p>
                                     ),
                                 },
                                 {
-                                    q: '구체적인 가격에 대해 알고 싶어요!',
+                                    q: '상담은 어떻게 시작하면 되나요?',
                                     a: (
                                         <p className="text-slate-600 dark:text-slate-400">
-                                            서비스 범위와 운영 채널에 따라 금액이 달라집니다. 정확한 견적은 무료 상담 신청 후 안내드립니다.
+                                            문의 페이지에서 간단한 정보를 남겨주시면 담당 컨설턴트가 연락드립니다. 온라인·오프라인 상담 모두 가능하며, 첫 상담은 부담 없이 시작하실 수 있습니다.
                                         </p>
                                     ),
                                 },
@@ -662,11 +652,11 @@ export default function CorporateFinancePage() {
                         className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col sm:flex-row items-center justify-between gap-8">
                         <div>
                             <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-3">
-                                문의하기
+                                기업 금융 상담 신청
                             </h2>
                             <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                                단순히 글만 발행하는 공장식 업체가 아닌,<br className="hidden md:block"/>
-                                대표님의 사업을 함께 고민하는 파트너를 원하신다면 문의주세요.
+                                정책자금, 기업인증, 절세 구조 — 어떤 고민이든 좋습니다.<br className="hidden md:block"/>
+                                원스텝이 대표님의 기업 금융 전략을 함께 설계하겠습니다.
                             </p>
                         </div>
                         <div className="shrink-0">

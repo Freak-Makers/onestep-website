@@ -19,14 +19,14 @@ export default function Hero() {
 
       {/* Text content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-20">
-        <div className="max-w-[580px]">
+        <div className="max-w-[620px]">
           <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-tight mb-6 text-white">
-            브랜드 성장을 함께 이끄는<br />
-            컨설팅 팀을 만나보세요
+            금융의 모든 선택,<br />
+            원스텝에서 함께 설계합니다
           </h1>
           <p className="text-white/80 text-base md:text-lg mb-10 leading-relaxed">
-            &#39;진짜&#39; 중요한 것이 무엇인지 아는<br className="hidden md:block" />
-            원스텝 컨설팅이 함께합니다.
+            부동산 · 정책자금 · 기업자문 · 세무 · 개인재무를<br className="hidden md:block" />
+            하나로 연결하는 종합 금융 컨설팅 팀
           </p>
         </div>
       </div>

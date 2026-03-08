@@ -166,9 +166,9 @@ export default function PersonalFinancePage() {
           {/* 텍스트 */}
           <div className="relative z-10 h-full flex items-center">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
-              <p className="text-white/80 text-sm font-medium mb-3">전문직 마케팅</p>
+              <p className="text-white/80 text-sm font-medium mb-3">개인 재무 컨설팅</p>
               <h1 className="text-3xl md:text-5xl font-semibold text-white leading-tight">
-                원스텝은 결과로 증명합니다
+                개인의 재무 목표를<br />체계적으로 실현합니다
               </h1>
             </div>
           </div>
@@ -181,12 +181,12 @@ export default function PersonalFinancePage() {
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <span className="material-icons text-white/60 text-5xl mb-6 block">format_quote</span>
             <h2 className="text-xl md:text-3xl font-extrabold text-white leading-snug mb-6">
-              전문직분들께서 저희에게 대행 후,<br />
-              문의량이 평균 335% 늘어난 이유는 무엇일까요?
+              재무는 숫자가 아닌<br />
+              삶의 방향을 설계하는 일입니다.
             </h2>
             <p className="text-white/70 text-sm md:text-base leading-relaxed">
-              고객사 3,000여 개 보유 세무법인 그리고 연매출 약 400억 규모의 법무법인까지<br className="hidden md:block" />
-              원스텝컨설팅은 전문직에 최적화된 금융 솔루션을 제공해드리고 있습니다.
+              보험 리밸런싱, 금융 상품 활용, 생애주기 포트폴리오 — 개인의 재무 고민은 다양합니다.<br className="hidden md:block" />
+              원스텝은 고객의 상황과 목표에 맞는 맞춤 재무 전략을 함께 설계합니다.
             </p>
           </div>
         </section>
@@ -198,19 +198,19 @@ export default function PersonalFinancePage() {
               {/* 좌측 텍스트 */}
               <div className="flex-1">
                 <h2 className="text-2xl md:text-3xl font-extrabold mb-5 text-slate-900 dark:text-white leading-snug">
-                  왜 저는 문의가<br />하나도 오지 않을까요?
+                  지금 내 재무 상태,<br />정확하게 알고 계신가요?
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">
-                  혼자 해보고 대행도 맡겨봤는데도 문의가 없다면<br className="hidden md:block" />
-                  지금은 마케팅 점검이 꼭 필요한 시점입니다.<br className="hidden md:block" />
-                  무료 점검 받고 전자책까지 함께 받아보세요.
+                  보험이 적절한지, 금융 상품이 나에게 맞는지,<br className="hidden md:block" />
+                  은퇴 준비가 충분한지 — 막연하게 느껴지신다면<br className="hidden md:block" />
+                  원스텝의 개인 재무 진단을 먼저 받아보세요.
                 </p>
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-primary text-white px-7 py-3.5 rounded-full font-bold text-sm hover:shadow-xl hover:brightness-110 transition-all"
                 >
                   <span className="material-symbols-outlined text-base">check_circle</span>
-                  무료 진단받고 전자책 받기
+                  개인 재무 진단 신청하기
                 </Link>
               </div>
               {/* 우측 책 이미지 placeholder */}
@@ -255,13 +255,13 @@ export default function PersonalFinancePage() {
               <div className="md:w-1/2">
                 <p className="text-primary font-bold text-sm mb-2">01</p>
                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                  전문적인 상담으로<br />차별화된 서비스 제공
+                  금융 상품 활용 전략으로<br />자산을 체계적으로 설계합니다
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                  단순한 조언이 아닌, 고객의 재무 상황을 정밀 진단한 후 맞춤 전략을 수립합니다. 전담 컨설턴트가 처음부터 끝까지 동행합니다.
+                  복잡한 금융 상품 중 고객의 상황에 맞는 최적의 상품을 선별합니다. 단순 추천이 아닌, 전략적인 자산 배분을 설계합니다.
                 </p>
                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                  국내 최고 수준의 재무 전문가팀이 직접 상담하며, 평균 응답 시간 2시간 이내로 신속하게 서비스를 제공합니다.
+                  금융 창업 지원부터 생애주기별 포트폴리오 구성까지 — 개인의 재무 목표를 구체적인 계획으로 만들어 드립니다.
                 </p>
               </div>
               <div className="md:w-1/2 w-full">
@@ -276,13 +276,13 @@ export default function PersonalFinancePage() {
               <div className="md:w-1/2">
                 <p className="text-primary font-bold text-sm mb-2">02</p>
                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                  데이터 기반 투자 전략으로<br />가치를 높이는 전문적 진행
+                  보험 점검 및 리밸런싱으로<br />불필요한 지출을 줄입니다
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                  시장 데이터와 개인 재무 데이터를 결합하여 최적의 투자 포트폴리오를 설계합니다. 리스크를 최소화하면서 수익을 극대화합니다.
+                  현재 가입된 보험이 나에게 맞는지 정밀 점검합니다. 중복 보장을 정리하고 꼭 필요한 보장만 남기는 리밸런싱을 진행합니다.
                 </p>
                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                  AI 기반 분석 도구와 전문가의 직관을 결합하여 빠르게 변하는 금융 시장에서도 안정적인 성과를 유지합니다.
+                  보험료 최적화로 절약된 금액을 투자와 저축으로 돌려 실질적인 자산 증가로 이어지도록 설계합니다.
                 </p>
               </div>
               <div className="md:w-1/2 w-full">
@@ -297,13 +297,13 @@ export default function PersonalFinancePage() {
               <div className="md:w-1/2">
                 <p className="text-primary font-bold text-sm mb-2">03</p>
                 <h3 className="text-xl md:text-2xl font-extrabold mb-4 text-slate-900 dark:text-white">
-                  데이터에 기반한<br />체계적인 성과 보고서
+                  생애주기 재무 포트폴리오로<br />은퇴까지 함께 설계합니다
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
-                  월별 재무 성과를 정량적 지표로 명확하게 보고합니다. 자산 변화, 수익률, 절세 효과를 한눈에 확인할 수 있습니다.
+                  현재의 저축, 투자, 보험을 생애주기에 맞게 재배치합니다. 30대의 자산 형성부터 50대의 은퇴 준비까지 단계별로 설계합니다.
                 </p>
                 <p className="text-slate-500 dark:text-slate-500 text-sm leading-relaxed">
-                  모든 데이터는 실시간으로 업데이트되며, 전용 대시보드를 통해 언제든지 현황을 확인하실 수 있습니다.
+                  막연했던 노후 계획이 구체적인 숫자와 실행 계획으로 바뀝니다. 원스텝이 끝까지 함께합니다.
                 </p>
               </div>
               <div className="md:w-1/2 w-full">
@@ -320,13 +320,13 @@ export default function PersonalFinancePage() {
           <div className="max-w-5xl mx-auto text-center text-white relative z-10">
             <p className="text-white/70 text-sm font-semibold uppercase tracking-widest mb-4">Performance</p>
             <h2 className="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">
-              저희는 이런 전문적 금융 서비스의<br />새로운 패러다임이 되겠습니다
+              고객의 재무 목표가<br />원스텝의 목표입니다
             </h2>
             <p className="text-white/80 text-sm md:text-base mb-4">
-              숫자로 증명하는 성과, 고객과 함께 만들어온 신뢰의 결과입니다.
+              개인 재무 컨설팅의 결과는 숫자보다 삶의 변화로 나타납니다.
             </p>
             <p className="text-white/60 text-xs mb-12">
-              자기 평가 보고서 기준 / 자체 보고
+              자체 상담 데이터 기준
             </p>
 
             {/* 통계 */}
@@ -349,9 +349,9 @@ export default function PersonalFinancePage() {
                 <span className="material-symbols-outlined text-white text-2xl">person</span>
               </div>
               <p className="text-white/90 text-sm md:text-base max-w-lg leading-relaxed">
-                "처음에는 반신반의했는데, 6개월 만에 실제로 자산이 늘어난 걸 보고 놀랐습니다. 블로그와 데이터 보고서를 통해 제 재무 상황을 항상 투명하게 확인할 수 있어서 안심이 됩니다."
+                "보험이 중복된 줄도 몰랐는데, 정리하고 나니 월 보험료가 줄면서 그 금액을 저축으로 돌릴 수 있었습니다. 재무 구조가 정리되니 불안감이 많이 줄었어요."
               </p>
-              <p className="text-white/60 text-xs">— 직장인 이○○ (30대) 고객 후기</p>
+              <p className="text-white/60 text-xs">— 직장인 김○○ (40대) 고객 후기</p>
             </div>
           </div>
         </section>
@@ -462,12 +462,12 @@ export default function PersonalFinancePage() {
             {/* 헤더 */}
             <div className="text-center mb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-white mb-6">
-                블로그 대행 서비스 과정
+                개인 재무 컨설팅 진행 과정
               </h2>
               <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                원스텝의 브랜드 블로그 칼럼은 법률, 세무, 회계, 노무에 대한 지식에 깊이 있는 지식을 가진 팀원들이 직접 작성합니다.<br className="hidden md:block" />
-                복잡한 내용을 쉽게 풀어내 누구나 읽기 쉬운 글을 작성하여 대표님만의 스토리가 담긴 브랜드 블로그를 만들어드립니다.<br className="hidden md:block" />
-                전문직에 최적화된, 문의가 많이 오는 서비스를 전부 제공해 드리겠습니다.
+                원스텝의 개인 재무 컨설팅은 현재 상황 진단부터 실행 지원까지 전 과정을 함께합니다.<br className="hidden md:block" />
+                복잡한 금융 언어를 쉽게 풀어드리고, 고객이 직접 이해하고 결정할 수 있도록 안내합니다.<br className="hidden md:block" />
+                단계별로 명확한 방향을 제시하며, 재무 목표 달성까지 지속적으로 지원합니다.
               </p>
             </div>
 
@@ -475,39 +475,39 @@ export default function PersonalFinancePage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5 items-end">
               {[
                 {
-                  step: '킥오프 미팅',
-                  icon: 'handshake',
+                  step: '초기 상담',
+                  icon: 'chat',
                   color: 'bg-blue-200 dark:bg-blue-700',
                   textColor: 'text-blue-800 dark:text-white',
                   iconColor: 'text-blue-500 dark:text-blue-200',
-                  items: ['킥오프 미팅', '전략인 수립', '브랜딩 방향성 수립', '팀채팅방 생성'],
+                  items: ['1:1 심층 상담', '재무 목표 파악', '현재 상태 점검'],
                   offset: 'md:mb-0',
                 },
                 {
-                  step: '마케팅 전략 세팅',
-                  icon: 'ads_click',
+                  step: '재무 현황 분석',
+                  icon: 'manage_search',
                   color: 'bg-blue-400 dark:bg-blue-600',
                   textColor: 'text-white',
                   iconColor: 'text-blue-100',
-                  items: ['실무 담당자 배정', '핵심 키워드 설정', '월별 계획안 전달'],
+                  items: ['보험 점검', '금융 상품 분석', '자산·부채 구조 파악'],
                   offset: 'md:mb-4',
                 },
                 {
-                  step: '브랜드 블로그 개설',
-                  icon: 'computer',
+                  step: '전략 수립',
+                  icon: 'edit_document',
                   color: 'bg-blue-600 dark:bg-blue-700',
                   textColor: 'text-white',
                   iconColor: 'text-blue-200',
-                  items: ['블로그 디자인 세팅', '정보성/홍보성 포스팅 계획 수립'],
+                  items: ['맞춤 재무 로드맵 설계', '생애주기 포트폴리오 구성'],
                   offset: 'md:mb-8',
                 },
                 {
-                  step: '서비스 시작',
+                  step: '실행 지원',
                   icon: 'verified',
                   color: 'bg-primary dark:bg-primary',
                   textColor: 'text-white',
                   iconColor: 'text-blue-200',
-                  items: ['서비스에 따른 포스팅 진행', '월별 마케팅 통계 보고서 전달'],
+                  items: ['단계별 실행 지원', '정기 리포트 제공', '전략 업데이트'],
                   offset: 'md:mb-12',
                 },
               ].map((col, idx) => (
@@ -556,12 +556,12 @@ export default function PersonalFinancePage() {
               {/* 헤더 */}
               <div className="flex flex-col md:flex-row gap-8 md:gap-20 items-start px-10 md:px-16 mb-14">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight shrink-0">
-                  전문직 마케팅의 모든 것
+                  개인 재무의 모든 영역
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                  브랜드 블로그뿐만 아니라 전문직 마케팅에 필요한 모든 전략을 수립하여 제공하고 있습니다.<br className="hidden md:block" />
-                  네이버 스마트 플레이스, 홈페이지 제작, 인스타그램 세팅 등 전문직 분들의 상황에 맞는<br className="hidden md:block" />
-                  마케팅 전략을 수립하여 제공해드립니다.
+                  보험 리밸런싱, 금융 상품 활용, 부동산 매입 자금, 생애주기 포트폴리오까지<br className="hidden md:block" />
+                  개인의 재무와 관련된 모든 고민을 하나의 창구에서 함께 해결합니다.<br className="hidden md:block" />
+                  원스텝이 고객의 상황에 맞는 최적의 재무 전략을 제안해 드립니다.
                 </p>
               </div>
 
@@ -588,8 +588,8 @@ export default function PersonalFinancePage() {
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-[#3b6fd4] to-[#7c3aed] text-white px-8 py-3.5 rounded-full font-bold text-sm hover:shadow-xl hover:brightness-110 transition-all"
                 >
-                  <span className="material-symbols-outlined text-base">download</span>
-                  전문직 마케팅 서비스 소개서 다운 받기
+                  <span className="material-symbols-outlined text-base">chat</span>
+                  개인 재무 상담 신청하기
                 </Link>
               </div>
             </div>
@@ -601,8 +601,8 @@ export default function PersonalFinancePage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* 헤더 */}
             <h2 className="text-xl md:text-2xl font-extrabold text-center text-slate-900 dark:text-white mb-10 leading-snug">
-              문의량이 최소 <span className="text-primary">3배 이상</span> 증가하신<br />
-              클라이언트 중 일부를 소개합니다
+              개인 재무 컨설팅으로<br />
+              실질적인 변화를 만든 사례입니다
             </h2>
 
             {/* 카드 리스트 */}
@@ -611,20 +611,17 @@ export default function PersonalFinancePage() {
               <div className="bg-white dark:bg-card-dark rounded-2xl shadow-sm overflow-hidden flex flex-col sm:flex-row">
                 <div className="flex-1 p-7 flex flex-col justify-center">
                   <h4 className="text-lg md:text-xl font-extrabold mb-3 text-slate-900 dark:text-white leading-snug">
-                    대행 두 달 만에<br />1,740만 원 수입 성공
+                    보험 리밸런싱으로<br />월 보험료 절감 및 자산 재배분
                   </h4>
-                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">황금진 세무사님</p>
-                  <p className="text-primary text-xs font-bold">세무회계 리저브</p>
+                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">40대 직장인 고객</p>
+                  <p className="text-primary text-xs font-bold">보험 점검 · 리밸런싱</p>
                 </div>
-                <div className="sm:w-[46%] bg-gradient-to-br from-slate-100 to-blue-50 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center min-h-[160px] relative overflow-hidden">
+                <div className="sm:w-[46%] bg-gradient-to-br from-blue-50 to-slate-100 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center min-h-[160px] relative overflow-hidden">
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                    <div className="w-14 h-14 rounded-full bg-slate-200 dark:bg-slate-600 mb-2 flex items-center justify-center">
-                      <span className="material-symbols-outlined text-slate-400 text-2xl">person</span>
-                    </div>
+                    <span className="material-symbols-outlined text-blue-400 text-4xl mb-2">health_and_safety</span>
                     <p className="text-slate-500 dark:text-slate-400 text-[10px] font-bold leading-snug">
-                      1,000건 이상 정부 R&D<br />정산 실무경험이 있는 세무사
+                      중복 보장 정리 후<br />월 절감액을 저축으로 전환
                     </p>
-                    <p className="text-slate-400 dark:text-slate-500 text-[9px] mt-1">세무회계 리저브 대표세무사 황구인</p>
                   </div>
                 </div>
               </div>
@@ -633,17 +630,17 @@ export default function PersonalFinancePage() {
               <div className="bg-white dark:bg-card-dark rounded-2xl shadow-sm overflow-hidden flex flex-col sm:flex-row">
                 <div className="flex-1 p-7 flex flex-col justify-center">
                   <h4 className="text-lg md:text-xl font-extrabold mb-3 text-slate-900 dark:text-white leading-snug">
-                    두 달만에 34건<br />누적 문의 전환 성공
+                    생애주기 포트폴리오 설계로<br />은퇴 목표 구체화
                   </h4>
-                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">이성재 행정사님</p>
-                  <p className="text-primary text-xs font-bold">한국비자행정사사무소</p>
+                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">30대 맞벌이 부부</p>
+                  <p className="text-primary text-xs font-bold">생애주기 재무 포트폴리오</p>
                 </div>
-                <div className="sm:w-[46%] bg-slate-800 flex items-center justify-center min-h-[160px] relative overflow-hidden">
+                <div className="sm:w-[46%] bg-slate-100 dark:bg-slate-800 flex items-center justify-center min-h-[160px] relative overflow-hidden">
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                    <p className="text-white text-xs font-extrabold leading-snug mb-1">
-                      법무부, 대한행정사회 공식 <span className="text-accent">비자 전문가</span>
+                    <span className="material-symbols-outlined text-slate-400 text-4xl mb-2">elderly</span>
+                    <p className="text-slate-600 dark:text-slate-300 text-[10px] font-bold leading-snug">
+                      막연했던 노후 계획이<br />구체적인 로드맵으로 전환
                     </p>
-                    <p className="text-white/50 text-[9px]">접수 실패율 1회 무결 A/S, 이후 반려킨 100% 환불</p>
                   </div>
                 </div>
               </div>
@@ -652,23 +649,21 @@ export default function PersonalFinancePage() {
               <div className="bg-white dark:bg-card-dark rounded-2xl shadow-sm overflow-hidden flex flex-col sm:flex-row">
                 <div className="flex-1 p-7 flex flex-col justify-center">
                   <h4 className="text-lg md:text-xl font-extrabold mb-3 text-slate-900 dark:text-white leading-snug">
-                    대행 이후<br />문의량 5배 증가
+                    금융 상품 활용 전략으로<br />자산 증가 구조 설계
                   </h4>
-                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">주환달 노무사님</p>
+                  <p className="text-slate-400 dark:text-slate-500 text-xs mb-1">자영업자 고객</p>
                   <div className="flex items-center gap-1.5">
-                    <div className="w-4 h-4 rounded bg-green-600 flex items-center justify-center">
-                      <span className="material-symbols-outlined text-white text-[8px]">balance</span>
+                    <div className="w-4 h-4 rounded bg-primary flex items-center justify-center">
+                      <span className="material-symbols-outlined text-white text-[8px]">savings</span>
                     </div>
-                    <p className="text-green-600 text-xs font-bold">노무법인 놀봄</p>
+                    <p className="text-primary text-xs font-bold">개인 재무 컨설팅</p>
                   </div>
                 </div>
                 <div className="sm:w-[46%] bg-slate-900 flex items-center justify-center min-h-[160px] relative overflow-hidden">
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                    <div className="w-14 h-14 rounded-full bg-slate-700 mb-2 flex items-center justify-center">
-                      <span className="material-symbols-outlined text-slate-400 text-2xl">person</span>
-                    </div>
+                    <span className="material-symbols-outlined text-slate-400 text-4xl mb-2">trending_up</span>
                     <p className="text-white text-[10px] font-bold leading-snug">
-                      의뢰인의 상황에 맞는<br />솔루션을 제시하는 노무사
+                      분산된 금융 자산을<br />통합 관리 구조로 재편
                     </p>
                   </div>
                 </div>
@@ -704,53 +699,43 @@ export default function PersonalFinancePage() {
             <div>
               {[
                 {
-                  q: '블로그나 인스타그램이나, 어디까지 관리해 주는거에요?',
+                  q: '보험 점검은 어떻게 진행되나요?',
                   a: (
                     <>
                       <p className="font-bold text-slate-900 dark:text-white mb-6">
-                        계정만 전달해주시면 그다음은 저희가 전부 진행해드립니다 :)
+                        현재 가입된 보험 증권을 공유해주시면 전문적인 분석을 시작합니다.
                       </p>
                       <p className="text-slate-600 dark:text-slate-400 mb-6">
-                        원스텝컨설팅은 기본적인 디자인 세팅부터<br />
-                        콘텐츠 기획, 발행까지 전부 올인원으로 대행해드리고 있어요.
-                      </p>
-                      <p className="text-slate-600 dark:text-slate-400 mb-6">
-                        대표님께서 마케팅 대행 맡기신 이후 별도로 하실 일 없이,<br />
-                        전략 수립부터 실무 집행까지 전부 맡아 진행합니다.
-                      </p>
-                      <p className="text-slate-600 dark:text-slate-400 mb-6">
-                        다만 인스타그램 릴스의 경우<br />
-                        영상 촬영이 필요한 콘텐츠는 대표님께서 직접 촬영해 주셔야 됩니다!
+                        중복 보장 여부, 보장 공백, 보험료 과다 납입 여부를 점검합니다.<br />
+                        분석 결과를 바탕으로 리밸런싱 방향을 함께 논의하며, 강요 없이 고객이 직접 결정합니다.
                       </p>
                       <p className="text-slate-600 dark:text-slate-400">
-                        물론 촬영이 결코 어렵지 않도록 상세한 가이드라인을 제공해드리고,<br />
-                        핸드폰으로도 쉽게 따라 하실 수 있게 도와드리니<br />
-                        이 점에 대해서도 전혀 걱정하실 필요 없습니다 :)
+                        보험 리밸런싱 후 절약된 금액을 어디에 활용할지도 함께 설계해 드립니다.
                       </p>
                     </>
                   ),
                 },
                 {
-                  q: '사전미팅도 가능한가요?',
+                  q: '금융 지식이 없어도 상담이 가능한가요?',
                   a: (
                     <p className="text-slate-600 dark:text-slate-400">
-                      네, 물론 가능합니다. 온라인/오프라인 미팅 모두 지원하며, 상담 신청 후 일정을 조율해 드립니다.
+                      네, 금융 지식이 전혀 없으셔도 괜찮습니다. 원스텝은 복잡한 금융 언어를 쉽게 설명하고, 고객이 충분히 이해한 뒤 결정할 수 있도록 안내합니다.
                     </p>
                   ),
                 },
                 {
-                  q: '우선 1개월만 진행해 보고 싶어요. 가능한가요?',
+                  q: '부동산 매입 자금도 함께 상담받을 수 있나요?',
                   a: (
                     <p className="text-slate-600 dark:text-slate-400">
-                      1개월 단기 진행도 가능합니다. 다만 실질적인 효과는 최소 3개월 이상 지속 운영 시 나타나므로, 장기 파트너십을 권장드립니다.
+                      네, 원스텝은 개인 재무뿐만 아니라 부동산 매입 자금 컨설팅도 함께 제공합니다. 내 집 마련 전략부터 수익형 부동산 자금 구조까지 통합적으로 설계해 드립니다.
                     </p>
                   ),
                 },
                 {
-                  q: '구체적인 가격에 대해 알고 싶어요!',
+                  q: '상담은 어디서 받을 수 있나요?',
                   a: (
                     <p className="text-slate-600 dark:text-slate-400">
-                      서비스 범위와 운영 채널에 따라 금액이 달라집니다. 정확한 견적은 무료 상담 신청 후 안내드립니다.
+                      온라인·오프라인 상담 모두 가능합니다. 문의 페이지에서 간단한 정보를 남겨주시면 담당 컨설턴트가 편한 방식으로 연락드립니다.
                     </p>
                   ),
                 },
@@ -771,11 +756,11 @@ export default function PersonalFinancePage() {
           <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full flex flex-col sm:flex-row items-center justify-between gap-8">
             <div>
               <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-3">
-                문의하기
+                개인 재무 상담 신청
               </h2>
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                단순히 글만 발행하는 공장식 업체가 아닌,<br className="hidden md:block" />
-                대표님의 사업을 함께 고민하는 파트너를 원하신다면 문의주세요.
+                보험, 투자, 은퇴, 부동산 — 어떤 고민이든 시작해보세요.<br className="hidden md:block" />
+                원스텝이 고객의 재무 목표를 함께 설계하겠습니다.
               </p>
             </div>
             <div className="shrink-0">

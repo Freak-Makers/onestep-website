@@ -3,30 +3,30 @@ import ScrollReveal from '@/components/common/ScrollReveal';
 export default function Process() {
   const steps = [
     {
-      icon: 'lightbulb',
-      title: 'Brand Concept',
-      description: '핵심 가치 발굴 및 방향성 수립',
+      icon: 'chat',
+      title: '초기 상담',
+      description: '재무 현황과 목표를 파악하는 1:1 심층 상담',
       circleBg: 'bg-blue-100 dark:bg-blue-900/40',
       iconColor: 'text-primary',
     },
     {
-      icon: 'edit_document',
-      title: 'Project Execution',
-      description: '전략 기반의 정밀한 솔루션 구축',
+      icon: 'manage_search',
+      title: '정밀 진단',
+      description: '자산·부채·리스크 구조 분석 및 가능성 도출',
       circleBg: 'bg-blue-200 dark:bg-blue-800/40',
       iconColor: 'text-primary',
     },
     {
-      icon: 'trending_up',
-      title: 'Business Growth',
-      description: '실시간 모니터링 및 고도화',
+      icon: 'edit_document',
+      title: '전략 설계',
+      description: '맞춤 재무 로드맵 수립 및 실행 계획 제안',
       circleBg: 'bg-blue-300 dark:bg-blue-700/40',
       iconColor: 'text-primary',
     },
     {
       icon: 'verified',
-      title: 'Business Success',
-      description: '지속 가능한 비즈니스 성장 달성',
+      title: '실행 및 관리',
+      description: '전문 파트너 협업으로 지속적인 성과 달성',
       circleBg: 'bg-primary',
       iconColor: 'text-white',
       ring: 'ring-8 ring-blue-50 dark:ring-blue-900/20',
@@ -39,9 +39,9 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <ScrollReveal>
           <span className="section-label">Process</span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-slate-900 dark:text-slate-100">How We Work</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-slate-900 dark:text-slate-100">컨설팅 프로세스</h2>
           <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base mb-16 max-w-xl mx-auto">
-            체계적인 4단계 프로세스로 대표님의 비즈니스 성공을 만들어 냅니다.
+            상담부터 실행까지 체계적인 4단계로 최적의 금융 전략을 만들어 드립니다.
           </p>
         </ScrollReveal>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-4 relative">
