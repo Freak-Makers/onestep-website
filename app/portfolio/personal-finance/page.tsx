@@ -1,6 +1,6 @@
 import Navbar from '@/components/common/Navbar';
 import PortfolioSection from '@/components/portfolio/PortfolioSection';
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
+import CTABanner from '@/components/common/CTABanner';
 
 const CATEGORIES = ['자산 관리', '보험 설계', '연금 플랜', '대출 상담'];
 
@@ -55,7 +55,7 @@ export default function PersonalFinancePortfolioPage() {
           categories={CATEGORIES}
           items={ITEMS}
         />
-        <PortfolioCTA
+        <CTABanner
           title="개인 재무 상담 신청"
           description="보험, 투자, 은퇴, 부동산 — 어떤 고민이든 시작해보세요.<br/>원스텝이 고객의 재무 목표를 함께 설계하겠습니다."
         />

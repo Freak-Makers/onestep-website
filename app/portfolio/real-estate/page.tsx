@@ -1,6 +1,6 @@
 import Navbar from '@/components/common/Navbar';
 import PortfolioSection from '@/components/portfolio/PortfolioSection';
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
+import CTABanner from '@/components/common/CTABanner';
 
 const CATEGORIES = ['부동산 투자', '부동산 대출', '경공매', '세금 절세'];
 
@@ -55,7 +55,7 @@ export default function RealEstatePortfolioPage() {
           categories={CATEGORIES}
           items={ITEMS}
         />
-        <PortfolioCTA
+        <CTABanner
           title="부동산 금융 상담 신청"
           description="내 집 마련·수익형 부동산·건물 투자 — 자금 구조부터 설계하세요.<br/>원스텝이 합리적인 부동산 금융 전략을 함께 만들겠습니다."
         />

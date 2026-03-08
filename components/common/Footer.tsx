@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-xs">
-          <p>© 2024 OneStep Consulting. All rights reserved.</p>
+          <p>© 2026 OneStep Consulting. All rights reserved.</p>
           <div className="flex gap-4">
             <Link className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#">
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

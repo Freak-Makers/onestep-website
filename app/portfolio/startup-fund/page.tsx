@@ -1,6 +1,6 @@
 import Navbar from '@/components/common/Navbar';
 import PortfolioSection from '@/components/portfolio/PortfolioSection';
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
+import CTABanner from '@/components/common/CTABanner';
 
 const CATEGORIES = ['창업 지원금', '엔젤 투자', '액셀러레이터', 'R&D 지원'];
 
@@ -55,7 +55,7 @@ export default function StartupFundPortfolioPage() {
           categories={CATEGORIES}
           items={ITEMS}
         />
-        <PortfolioCTA
+        <CTABanner
           title="창업 자금 상담 신청"
           description="무상지원금·융자금·R&D 지원 — 창업 준비부터 자금 확보까지.<br/>원스텝이 최적의 창업 자금 전략을 함께 설계하겠습니다."
         />

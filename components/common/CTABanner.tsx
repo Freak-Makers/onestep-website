@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-interface PortfolioCTAProps {
+interface CTABannerProps {
   title: string;
   description: string;
 }
 
-export default function PortfolioCTA({ title, description }: PortfolioCTAProps) {
+export default function CTABanner({ title, description }: CTABannerProps) {
   return (
     <section className="relative h-[280px] md:h-[340px] flex items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-slate-600 via-slate-500 to-slate-400" />

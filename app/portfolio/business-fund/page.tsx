@@ -1,6 +1,6 @@
 import Navbar from '@/components/common/Navbar';
 import PortfolioSection from '@/components/portfolio/PortfolioSection';
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
+import CTABanner from '@/components/common/CTABanner';
 
 const CATEGORIES = ['정책 자금', '기업 대출', '투자 유치', '신용 보증'];
 
@@ -55,7 +55,7 @@ export default function BusinessFundPortfolioPage() {
           categories={CATEGORIES}
           items={ITEMS}
         />
-        <PortfolioCTA
+        <CTABanner
           title="사업 자금 상담 신청"
           description="정책자금·기업 대출·투자 유치 — 어떤 자금이든 전략부터 시작하세요.<br/>원스텝이 최적의 자금 구조를 함께 설계하겠습니다."
         />

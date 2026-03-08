@@ -1,6 +1,6 @@
 import Navbar from '@/components/common/Navbar';
 import PortfolioSection from '@/components/portfolio/PortfolioSection';
-import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
+import CTABanner from '@/components/common/CTABanner';
 
 const CATEGORIES = ['법인 절세', '가업 승계', '배당 전략', '세무 조정'];
 
@@ -55,7 +55,7 @@ export default function TaxSavingPortfolioPage() {
           categories={CATEGORIES}
           items={ITEMS}
         />
-        <PortfolioCTA
+        <CTABanner
           title="기업 절세 상담 신청"
           description="법인 설계·급여·배당·상속·증여 — 합법적 절세 전략을 설계하세요.<br/>원스텝이 세무사·회계사 협업 네트워크로 함께하겠습니다."
         />

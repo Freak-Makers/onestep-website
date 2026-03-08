@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import type { ColumnPost } from '@/lib/column';
+import CTABanner from "@/components/common/CTABanner";
 
 const POSTS_PER_PAGE = 9;
 
@@ -166,33 +167,10 @@ export default function ColumnClient({ posts }: { posts: ColumnPost[] }) {
       </section>
 
       {/* ── CTA 배너 ──────────────────────────── */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            alt="CTA background"
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp9prqmVLK6kWOTbSjNriQjdcsp9acRidiDASXnYThlCKW0TeLPYSn7q-0SB_AH1t6mXFKtnMbOTH0J56-8MwX-2haOGunHYRZg6xXqOzlhfeKkVU-S7g8Y_X78m2IlEI-SaBBQKgLoYqRwJfSSiQ7N4r9dNseyeluhthuKX02BudztEQ1Ivp3ntt1EeLXPFtlR3D0EWNc3MO5iWvP5WscQHRoiMxcYVi5chEwhAqRBTYbEwdB05TvLD0ODeC8oXRBUdr4CXETsHSw"
-          />
-          <div className="absolute inset-0 bg-primary/90 mix-blend-multiply" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div className="text-white">
-            <h2 className="text-2xl md:text-4xl font-extrabold mb-3 leading-tight">
-              저희의 목표는 단 하나,<br />
-              대표님의 사업을 성공시키는 것
-            </h2>
-            <p className="text-blue-200 text-sm md:text-base">
-              원스텝 컨설팅은 오직 대표님만을 위해 밤낮없이 일합니다.
-            </p>
-          </div>
-          <Link
-            href="/contact"
-            className="shrink-0 inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-bold rounded-full text-base hover:shadow-2xl hover:scale-105 transition-all"
-          >
-            문의하기
-          </Link>
-        </div>
-      </section>
+      <CTABanner
+          title="사업 자금 상담 신청"
+          description="정책자금·기업 대출·투자 유치 — 어떤 자금이든 전략부터 시작하세요.<br/>원스텝이 최적의 자금 구조를 함께 설계하겠습니다."
+      />
     </>
   );
 }
