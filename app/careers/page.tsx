@@ -100,13 +100,13 @@ export default function CareersPage() {
             <p className="text-slate-500 dark:text-slate-400 mb-8">
               공고와 무관하게 지원서를 보내주세요. 적합한 포지션이 생기면 먼저 연락드립니다.
             </p>
-            <a
-              href="/contact"
+            <Link
+              href={`/careers/apply?position=${encodeURIComponent('인재풀')}`}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-primary text-white font-semibold hover:bg-primary/90 transition-colors"
             >
               이력서 보내기
               <span className="material-symbols-outlined text-base">send</span>
-            </a>
+            </Link>
           </section>
         </div>
       </main>
