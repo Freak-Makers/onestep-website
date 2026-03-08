@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/common/Navbar";
 
 export default function CareersPage() {
@@ -58,13 +59,13 @@ export default function CareersPage() {
                     </div>
                     <p className="text-sm text-slate-500 dark:text-slate-400">{position.description}</p>
                   </div>
-                  <a
-                    href="/contact"
+                  <Link
+                    href={`/careers/apply?position=${encodeURIComponent(position.title)}`}
                     className="shrink-0 inline-flex items-center gap-1 px-5 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary/90 transition-colors"
                   >
                     지원하기
                     <span className="material-symbols-outlined text-base">arrow_forward</span>
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
