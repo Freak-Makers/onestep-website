@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
 
 export default function PortfolioPage() {
   const reviews = [
@@ -182,7 +181,6 @@ export default function PortfolioPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

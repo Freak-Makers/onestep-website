@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/common/Navbar';
-import Footer from '@/components/common/Footer';
 
 const carouselItems = [
   {
@@ -774,7 +773,6 @@ export default function PersonalFinancePage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,5 +1,4 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
 import Services from "@/components/home/Services";
@@ -23,7 +22,6 @@ export default function Home() {
         <Performance />
         <ContactForm />
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,5 +1,4 @@
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
 import ContactForm from "@/components/contact/ContactForm";
 import FAQ from "@/components/common/FAQ";
 
@@ -47,7 +46,6 @@ export default function ContactPage() {
           <FAQ />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

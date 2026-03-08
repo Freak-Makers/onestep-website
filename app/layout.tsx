@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "pretendard/dist/web/static/pretendard.css";
 import "./globals.css";
 import ScrollToTop from "@/components/common/ScrollToTop";
+import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "비즈니스 스케일업 파트너 | OneStep Consulting",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body>
         <ScrollToTop />
         {children}
+        <Footer />
       </body>
     </html>
   );

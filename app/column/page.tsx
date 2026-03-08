@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/common/Navbar';
-import Footer from '@/components/common/Footer';
 import ColumnClient from '@/components/column/ColumnClient';
 import { getAllPosts } from '@/lib/column';
 
@@ -19,7 +18,6 @@ export default async function ColumnPage() {
       <main>
         <ColumnClient posts={posts} />
       </main>
-      <Footer />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
 import Experts from "@/components/home/Experts";
 import FAQ from "@/components/common/FAQ";
 
@@ -245,7 +244,6 @@ export default function ServicesPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }
