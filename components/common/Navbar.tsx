@@ -60,11 +60,11 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 font-light text-lg text-slate-900 dark:text-slate-100">
+        <div className="hidden md:flex items-center gap-2 lg:gap-6 font-light text-sm lg:text-base xl:text-lg text-slate-900 dark:text-slate-100">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.href} className="relative group">
-                <button className="flex items-center gap-1 hover:text-primary transition-colors py-2">
+                <button className="flex items-center gap-1 hover:text-primary transition-colors py-2 whitespace-nowrap">
                   {link.label}
                   <span className="material-symbols-outlined text-base transition-transform group-hover:rotate-180">
                     expand_more
@@ -90,7 +90,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary transition-colors whitespace-nowrap"
               >
                 {link.label}
               </Link>
