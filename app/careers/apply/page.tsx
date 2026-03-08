@@ -1,11 +1,11 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import Navbar from "@/components/common/Navbar";
 
-export default function CareersApplyPage() {
+function CareersApplyForm() {
   const searchParams = useSearchParams();
   const position = searchParams.get("position") ?? "";
 
@@ -265,5 +265,13 @@ export default function CareersApplyPage() {
         </div>
       </main>
     </>
+  );
+}
+
+export default function CareersApplyPage() {
+  return (
+    <Suspense>
+      <CareersApplyForm />
+    </Suspense>
   );
 }
