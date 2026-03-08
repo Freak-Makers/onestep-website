@@ -36,8 +36,7 @@ export default function Services() {
     {
       title: '네트워크 자문',
       description: '세무사·법무사·노무사 등 전문 파트너를 연결합니다',
-      image:
-        'https://lh3.googleusercontent.com/aida-public/AB6AXuA8c4PtJjB2OjD_O1FIx3wTqjRTFNpbcv2DzNTRUWBTPifu8HA4asYm6xc2vhS4HqucOxdhcH3lxzmEBNq_cRJa_7wQLcKK-_HXr7OMceK_6nmdfJqQ6BY7BPuHXsgM8AI4lVQcm5QMAv_xEk_pjP1639_hf12AjwCTBHVMxwsWptLUDMeNR1O3G5WgAysFU1GJxYPKBV2ZcceNtO7I3_HdsCFLETGWa0hwAT6hz96oJX8Rd6Qqbaw4RrSB',
+      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80',
     },
   ];
 
